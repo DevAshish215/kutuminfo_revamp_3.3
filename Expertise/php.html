@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <title>PHP Development Expertise | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Removed expertise.css as styles are now in style.css and responsive.css -->
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Expertise > PHP Development</div>
+                    <h1>PHP <span class="expertise-text-accent">Development</span></h1>
+                    <p>Delivering robust, scalable web solutions with PHP's flexible, server-side scripting language.</p>
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/expertise/php_images/php_icon.png" alt="PHP Development">
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="expertise-overview-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>PHP Development Expertise</h2>
+                    <p>Building dynamic, responsive web applications with PHP's powerful ecosystem</p>
+                </div>
+                
+                <div class="expertise-overview-grid">
+                    <div class="expertise-overview-content reveal-item">
+                        <p>At KutumbInfo, our PHP development team specializes in creating robust, scalable web applications that leverage PHP's versatility and wide ecosystem. With extensive experience across popular frameworks like Laravel, Symfony, and CodeIgniter, we deliver solutions that balance performance, security, and maintainability to meet your business objectives.</p>
+                        
+                        <p>Our expertise spans the entire PHP technology stack, including modern PHP 8+ features, RESTful APIs, database integration, and cloud deployment strategies. We implement best practices such as test-driven development, clean code principles, and secure coding standards to ensure your PHP applications are not only functional but also maintainable and future-proof.</p>
+                        
+                        <div class="expertise-highlight-box">
+                            <h3>The PHP Advantage</h3>
+                            <p>PHP powers over 78% of websites using server-side programming languages, making it one of the most widely adopted technologies for web development. Its mature ecosystem, extensive community support, and compatibility with various databases and servers make it an excellent choice for a wide range of web applications. Whether you're building a content management system, e-commerce platform, or custom business application, PHP provides the flexibility, performance, and reliability needed for successful web projects.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-overview-image reveal-item">
+                        <img src="../assets/images/expertise/php_images/php_expertise.png" alt="PHP Development Expertise">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="expertise-services-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our PHP Development Services</h2>
+                    <p>Comprehensive PHP solutions for your web application needs</p>
+                </div>
+                
+                <div class="expertise-services-grid">
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/php_images/laravel_development.png" alt="Laravel Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Laravel Development</h3>
+                            <p>We build elegant, feature-rich applications using Laravel's powerful MVC architecture, robust ORM, and extensive ecosystem of packages.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/php_images/custom_web_applications.png" alt="Custom Web Applications">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Custom Web Applications</h3>
+                            <p>Our team creates bespoke PHP applications tailored to your specific business requirements, from internal tools to customer-facing platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/php_images/api_development.png" alt="API Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>API Development</h3>
+                            <p>We develop robust RESTful APIs that enable seamless integration between systems, mobile apps, and third-party services.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/php_images/ecommerce_solutions.png" alt="E-commerce Solutions">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>E-commerce Solutions</h3>
+                            <p>We implement scalable e-commerce platforms using PHP frameworks and integrate payment gateways, inventory management, and customer portals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/php_images/cms_development.png" alt="CMS Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>CMS Development</h3>
+                            <p>We create custom content management systems or extend existing platforms like WordPress with tailored functionality for your content needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/php_images/legacy_code_migration.png" alt="Legacy Code Migration">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Legacy Code Migration</h3>
+                            <p>We modernize older PHP applications by upgrading to newer PHP versions, refactoring code, and migrating to modern frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="expertise-process-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our PHP Development Process</h2>
+                    <p>A systematic approach to delivering quality PHP applications</p>
+                </div>
+                
+                <div class="expertise-process-steps">
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">1</div>
+                        <div class="expertise-step-content">
+                            <h3>Requirements Analysis</h3>
+                            <p>We thoroughly analyze your business needs, technical requirements, and user expectations to create a comprehensive project roadmap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">2</div>
+                        <div class="expertise-step-content">
+                            <h3>Architecture & Design</h3>
+                            <p>Our architects design a robust application structure with focus on scalability, security, and performance using modern PHP practices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">3</div>
+                        <div class="expertise-step-content">
+                            <h3>Development & Testing</h3>
+                            <p>We follow test-driven development practices, implementing features while ensuring comprehensive test coverage and code quality.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">4</div>
+                        <div class="expertise-step-content">
+                            <h3>Deployment & Integration</h3>
+                            <p>We implement CI/CD pipelines for efficient deployment and ensure proper integration with databases, third-party services, and existing systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">5</div>
+                        <div class="expertise-step-content">
+                            <h3>Maintenance & Support</h3>
+                            <p>Our team provides ongoing monitoring, performance optimization, security updates, and technical support to keep your PHP application running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="expertise-benefits-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Why Choose PHP</h2>
+                    <p>Key advantages that PHP brings to your web projects</p>
+                </div>
+                
+                <div class="expertise-benefits-cards">
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/php_images/cost_effective.png" alt="Cost-Effective">
+                        </div>
+                        <h3>Cost-Effective</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Open-source technology</li>
+                            <li>No licensing costs</li>
+                            <li>Abundant developer talent</li>
+                            <li>Faster development cycles</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/php_images/fast_development.png" alt="Fast Development">
+                        </div>
+                        <h3>Rapid Development</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Modern frameworks</li>
+                            <li>Extensive libraries</li>
+                            <li>Composer package manager</li>
+                            <li>Quick iteration cycles</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/php_images/database_flexibility.png" alt="Database Flexibility">
+                        </div>
+                        <h3>Database Flexibility</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Works with any database</li>
+                            <li>Powerful ORMs available</li>
+                            <li>Native SQL support</li>
+                            <li>Simple data handling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/php_images/wide_compatibility.png" alt="Wide Compatibility">
+                        </div>
+                        <h3>Wide Compatibility</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Cross-platform functionality</li>
+                            <li>Compatible with all servers</li>
+                            <li>Easy cloud deployment</li>
+                            <li>Works with any OS</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/php_images/scalability.png" alt="Scalability">
+                        </div>
+                        <h3>Proven Scalability</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Powers major websites</li>
+                            <li>Horizontal scaling support</li>
+                            <li>Caching capabilities</li>
+                            <li>Load balancing options</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/php_images/community_support.png" alt="Community Support">
+                        </div>
+                        <h3>Strong Community</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Millions of developers</li>
+                            <li>Extensive documentation</li>
+                            <li>Active framework ecosystems</li>
+                            <li>Regular updates</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="expertise-benefits-stats reveal-item">
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">78%</div>
+                        <div class="expertise-stat-text">Of websites globally use PHP</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">45+</div>
+                        <div class="expertise-stat-text">Popular PHP frameworks available</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">4.5M+</div>
+                        <div class="expertise-stat-text">Active PHP developers globally</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">28</div>
+                        <div class="expertise-stat-text">Years of PHP's proven reliability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="expertise-cta-section reveal-section">
+            <div class="container">
+                <div class="expertise-cta-content reveal-item">
+                    <h2>Ready to Build Your PHP Web Application?</h2>
+                    <p>Contact us to discuss how our PHP development expertise can help create powerful, feature-rich solutions for your business.</p>
+                    <a href="../work_with_us.html" class="expertise-cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 
+
+
+
+

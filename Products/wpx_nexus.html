@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WPS Nexus - A Secure Next-Generation Solution for Seamless Payroll Compliance by KutumbInfo">
+    <meta name="keywords" content="WPS Nexus, KutumbInfo, payroll solution, compliance, fintech, WPS">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/Products/wpx_nexus.html" />
+    <title>WPS Nexus | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="../why_kutumbinfo.html" class="no-arrow">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../work_with_us.html" class="no-arrow">Work with us</a>
+    </div>
+</nav>
+
+<div id="main-content">
+    <main class="prod-main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Products > Fintech Solutions > WPS Nexus</div>
+                    <h1>WPS<span class="expertise-text-accent">Nexus</span></h1>
+                    <p>A Secure Next-Generation Solution for Seamless Payroll Compliance</p>
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/product_img/WPS/Work flow.png" alt="WPS Nexus Solution">
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Are Section -->
+        <section class="solution-section reveal-section" id="what-we-are">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>What we are?</h2>
+                </div>
+                <div class="overview-content reveal-item">
+                    <div class="overview-text">
+                        <p>WPS Nexus is a comprehensive and innovative business management solution that delivers unparalleled value to its customers. With its modular design, seamless integration capabilities, and exceptional customer support, WPS empowers businesses to streamline their operations, boost productivity, and drive strategic growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Offer Section -->
+        <section class="solution-section reveal-section" id="what-we-offer">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>What we offer</h2>
+                    <p>Comprehensive payroll compliance solutions tailored to your business needs</p>
+                </div>
+                <div class="wps-grid reveal-item">
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Seamless Integration</h3>
+                        <p>Ensure seamless integration with financial institutions and banks by supporting multiple data formats and industry standards</p>
+                    </div>
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Provide user-friendly interface for diverse users, from technical experts to non-technical stakeholders</p>
+                    </div>
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>Scalable Processing</h3>
+                        <p>Support scalable processing capabilities, efficiently handling both small datasets and large-scale operations</p>
+                    </div>
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Enterprise Security</h3>
+                        <p>Protect sensitive payroll data with advanced encryption, access controls, and compliance with international security standards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="solution-section reveal-section" id="key-features">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Key Features & Capabilities</h2>
+                </div>
+                <div class="solution-container">
+                    <div class="feature-box reveal-item">
+                        <div class="feature-box-header">
+                            <h3>Essential Capabilities</h3>
+                            <p>Core functionality that powers the WPS Nexus platform</p>
+                        </div>
+                        <div class="feature-box-content">
+                            <div class="solution-content reveal-item">
+                                <ul class="solution-features">
+                                    <li class="solution-feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-upload"></i>
+                                        </div>
+                                        <div class="solution-feature-content">
+                                            <h4>Data Upload & Management</h4>
+                                        </div>
+                                    </li>
+                                    <li class="solution-feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-university"></i>
+                                        </div>
+                                        <div class="solution-feature-content">
+                                            <h4>Banking Integration</h4>
+                                        </div>
+                                    </li>
+                                    <li class="solution-feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="solution-feature-content">
+                                            <h4>API Access</h4>
+                                        </div>
+                                    </li>
+                                    <li class="solution-feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div class="solution-feature-content">
+                                            <h4>Visualization Tools</h4>
+                                        </div>
+                                    </li>
+                                    <li class="solution-feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-tasks"></i>
+                                        </div>
+                                        <div class="solution-feature-content">
+                                            <h4>Batch Processing</h4>
+                                        </div>
+                                    </li>
+                                    <li class="solution-feature">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-users-cog"></i>
+                                        </div>
+                                        <div class="solution-feature-content">
+                                            <h4>User Management & Permissions</h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="solution-image reveal-item">
+                                <img src="../assets/images/product_img/WPS/Work flow.png" alt="WPS Nexus Features" class="img-fluid solution-feature-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reporting Section -->
+        <section class="solution-section reveal-section" id="reporting">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Reporting, Monitoring & Collaboration</h2>
+                    <p>Comprehensive tools for tracking, analyzing, and sharing payroll data across your organization</p>
+                </div>
+                <div class="wps-grid reveal-item">
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Reporting & Exporting</h3>
+                        <p>Generate reports summarizing processing results and export processed data in various formats for further use</p>
+                    </div>
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Monitoring & Logging</h3>
+                        <p>Track processing tasks and monitor performance while maintaining logs for auditing and troubleshooting</p>
+                    </div>
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>Allow multiple users to collaborate on projects and share results and datasets with stakeholders easily</p>
+                    </div>
+                    <div class="wps-card">
+                        <div class="wps-card-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3>Real-time Alerts</h3>
+                        <p>Stay informed with automated notifications about processing status, compliance issues, and system performance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Protection Section -->
+        <section class="solution-section reveal-section" id="data-protection">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Data Protection Features</h2>
+                </div>
+                <div class="solution-container">
+                    <div class="protection-cards-row reveal-item">
+                        <div class="feature-detailed-card wps-feature-card">
+                            <div class="feature-content">
+                                <div class="feature-icon-container">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Data Encryption</h3>
+                                    <p>Ensures sensitive payroll data is secure and confidential always.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-detailed-card wps-feature-card">
+                            <div class="feature-content">
+                                <div class="feature-icon-container">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Two Factor Authentication</h3>
+                                    <p>Added layer of security for employers accessing the System</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accuracy Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>99.9% Accuracy</h2>
+                <p>Our advanced algorithms ensure precise calculations and reliable results, giving you confidence in your business decisions.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section class="solution-section reveal-section" id="workflow">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Work Flow</h2>
+                    <p>A comprehensive overview of the WPS Nexus payment processing system</p>
+                </div>
+                
+                <div class="workflow-container reveal-item">
+                    <div class="workflow-step-container">
+                        <div class="workflow-content">
+                            <h3>WPS Nexus Workflow</h3>
+                            <p class="workflow-description">Our streamlined workflow ensures efficient and secure processing of all payroll transactions, maintaining compliance at every step.</p>
+                            <ul class="workflow-steps">
+                                <li><span>1</span> Data collection & validation</li>
+                                <li><span>2</span> Compliance verification</li>
+                                <li><span>3</span> Processing & approval</li>
+                                <li><span>4</span> Secure fund distribution</li>
+                                <li><span>5</span> Reporting & analytics</li>
+                            </ul>
+                        </div>
+                        <div class="workflow-image">
+                            <img src="../assets/images/product_img/WPS/Work flow - Copy.png" alt="WPS Nexus Workflow" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prod-section-header reveal-item">
+                    <h2>Salary Processing through WPS Nexus</h2>
+                </div>
+                
+                <div class="workflow-container reveal-item">
+                    <div class="workflow-step-container reverse">
+                        <div class="workflow-content">
+                            <h3>Seamless Salary Processing</h3>
+                            <p>Our system efficiently handles the entire salary distribution process from verification to disbursement, ensuring:</p>
+                            <ul class="workflow-features">
+                                <li><i class="fas fa-check-circle"></i> Regulatory compliance</li>
+                                <li><i class="fas fa-check-circle"></i> Accurate and timely payments</li>
+                                <li><i class="fas fa-check-circle"></i> Complete audit trails</li>
+                                <li><i class="fas fa-check-circle"></i> Secure transaction handling</li>
+                                <li><i class="fas fa-check-circle"></i> Real-time processing status</li>
+                            </ul>
+                        </div>
+                        <div class="workflow-image">
+                            <img src="../assets/images/product_img/WPS/Salary Processing through WPS Nexus.png" alt="WPS Nexus Salary Processing" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-Time Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>Real-Time Salary Disbursement</h2>
+                <p>Ensure timely payments with instant transaction tracking and reporting</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Let's talk solution</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section class="solution-section reveal-section" id="dashboard">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Dashboard</h2>
+                    <p>Powerful visualizations and analytics for complete business oversight</p>
+                </div>
+                
+                <div class="dashboard-container reveal-item">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-image">
+                            <img src="../assets/images/product_img/WPS/Dashbord.png" alt="WPS Nexus Dashboard" class="img-fluid">
+                            <div class="dashboard-overlay">
+                                <div class="dashboard-badge">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Interactive Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-features">
+                        <div class="dashboard-card">
+                            <div class="card-body">
+                                <h4 class="card-subtitle">Business Efficiency Excellence</h4>
+                                <ul class="dashboard-list">
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Real-time monitoring of payroll processing status and metrics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Comprehensive data visualization with customizable charts and reports</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Intuitive insights for compliance tracking and risk management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>User-friendly interface with role-based access controls</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Exportable reports in multiple formats for stakeholder distribution</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-features-grid reveal-item">
+                    <div class="dashboard-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Performance Metrics</h4>
+                        <p>Monitor key payroll performance indicators at a glance</p>
+                    </div>
+                    
+                    <div class="dashboard-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h4>Alerts & Notifications</h4>
+                        <p>Stay informed with customizable alerts for critical events</p>
+                    </div>
+                    
+                    <div class="dashboard-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Scheduled Reports</h4>
+                        <p>Automate report delivery to stakeholders on your schedule</p>
+                    </div>
+                    
+                    <div class="dashboard-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile Access</h4>
+                        <p>View critical data on any device, anywhere, anytime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intuitive Dashboard Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>Intuitive Dashboard</h2>
+                <p>Our user-friendly dashboard provides a comprehensive view of your business operations, making it easy to track performance and make informed decisions.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Explore Features</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <!-- Removed reference to products.js as functionality has been merged into main.js -->
+</body>
+</html> 
+
+

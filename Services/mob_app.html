@@ -1,0 +1,579 @@
+<!-- newpage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/services/mob_app.html" />
+    <title>Mobile App Development Services | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+<div id="main-content">
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="web-hero-section reveal-section">
+            <div class="web-hero-container">
+                <div class="web-hero-content reveal-item">
+                    <div class="breadcrumb">Home > Services > Mobile App Development</div>
+                    <h1>Mobile App <span class="text-accent">Development</span></h1>
+                    <p>Transforming innovative ideas into powerful, user-friendly mobile applications that drive engagement and business growth across iOS and Android platforms.</p>
+                </div>
+                <div class="web-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/services/mob_app/mobile_app_illustration.png" alt="Mobile App Development Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Innovative Mobile App Solutions</h2>
+                <p>Empowering your business with custom mobile applications that elevate your brand presence</p>
+            </div>
+            
+            <div class="overview-content reveal-item">
+                <p>At KutumbInfo, we have earned a reputation as one of the top mobile app development companies. We offer an extensive selection of mobile app development services, including bespoke mobile apps, enterprise software solutions, animation, and applications for augmented and virtual reality.</p>
+                
+                <p>Our experienced team of iOS and Android developers is dedicated to designing, developing, and delivering apps that engage customers and provide them with unique experiences. We specialize in both native and hybrid apps, ensuring effective consumer engagement across various devices. KutumbInfo is focused on creating high-end solutions for businesses, utilizing the latest technologies and methods in mobile application development.</p>
+                
+                <div class="overview-highlight">
+                    <h3>The Right Mobile Solution for Your Business</h3>
+                    <p>Whether you need a native app for maximum performance, a cross-platform solution for wider reach, or a progressive web app for accessibility, we customize our approach to meet your unique business needs and market requirements. Our goal is to deliver mobile solutions that resonate with your audience and drive real business results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Mobile App Development Services</h2>
+                <p>Comprehensive mobile solutions for modern businesses</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/mob_app/native_app_icon.png" alt="Native App Development Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Native App Development</h3>
+                        <p>We create platform-specific mobile apps for iOS and Android, optimized for maximum performance, security, and user experience. Our native apps leverage the full potential of device features to deliver exceptional functionality and responsiveness.</p>
+        </div>
+    </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/mob_app/cross_platform_icon.png" alt="Cross-Platform Development Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cross-Platform Development</h3>
+                        <p>Expand your reach and reduce development time with our cross-platform solutions using frameworks like React Native and Flutter. We build apps that deliver near-native experience while maintaining a single codebase for multiple platforms.</p>
+        </div>
+    </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/mob_app/pwa_icon.png" alt="Progressive Web Apps Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Progressive Web Apps (PWA)</h3>
+                        <p>Combine the best features of web and mobile apps with our PWA development services. Our PWAs offer offline capabilities, push notifications, and responsive designs that work across all devices, providing a seamless user experience.</p>
+        </div>
+    </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/mob_app/enterprise_solutions_icon.png" alt="Enterprise Mobile Solutions Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Enterprise Mobile Solutions</h3>
+                        <p>Our enterprise mobile apps streamline business operations, enhance productivity, and secure sensitive data. We develop customized solutions for project management, team communication, data analysis, and more to meet your specific business needs.</p>
+        </div>
+    </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/mob_app/ui_ux_design_icon.png" alt="App UI/UX Design Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>App UI/UX Design</h3>
+                        <p>We create intuitive, engaging, and visually appealing interfaces that enhance user satisfaction and drive app adoption. Our design approach focuses on user-centered principles to deliver exceptional mobile experiences.</p>
+        </div>
+    </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/mob_app/maintenance_support_icon.png" alt="App Maintenance & Support Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>App Maintenance & Support</h3>
+                        <p>We provide ongoing support and maintenance services to ensure your mobile app remains up-to-date, secure, and high-performing. Our team handles bug fixes, feature updates, compatibility testing, and more to maximize your app's longevity.</p>
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- Technology Showcase Section -->
+        <section class="tech-showcase-section reveal-section">
+            <div class="tech-showcase-container">
+                <div class="tech-content reveal-item">
+                    <h2>Technology <span class="text-accent">Stack</span></h2>
+                    <p>We leverage cutting-edge technologies to deliver robust, scalable, and high-performing mobile solutions.</p>
+                    
+                    <ul class="tech-list">
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/ios_swift_icon.png" alt="iOS (Swift) Icon">
+                            <span>iOS (Swift)</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/android_kotlin_icon.png" alt="Android (Kotlin) Icon">
+                            <span>Android (Kotlin)</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/react_native_icon.png" alt="React Native Icon">
+                            <span>React Native</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/flutter_icon.png" alt="Flutter Icon">
+                            <span>Flutter</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/firebase_icon.png" alt="Firebase Icon">
+                            <span>Firebase</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/graphql_icon.png" alt="GraphQL Icon">
+                            <span>GraphQL</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/rest_apis_icon.png" alt="REST APIs Icon">
+                            <span>REST APIs</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/ar_vr_icon.png" alt="AR/VR Icon">
+                            <span>AR/VR</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/mob_app/ai_ml_icon.png" alt="AI/ML Integration Icon">
+                            <span>AI/ML Integration</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-image reveal-item">
+                    <img src="../assets/images/services/mob_app/mobile_tech_illustration.png" alt="Mobile Technology Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Section -->
+        <section class="approach-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Mobile Platform Expertise</h2>
+                <p>Comprehensive mobile development across major platforms</p>
+            </div>
+            
+            <div class="approach-grid">
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/mob_app/ios_development_icon.png" alt="iOS Development Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>iOS Development</h3>
+                        <p>Our iOS developers create premium applications for iPhones and iPads using Swift and SwiftUI, leveraging Apple's ecosystem for high-performance, secure, and elegantly designed apps that pass App Store's strict guidelines.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/mob_app/android_development_icon.png" alt="Android Development Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Android Development</h3>
+                        <p>We build native Android applications using Kotlin and Jetpack Compose, optimized for the diverse Android device ecosystem, while ensuring consistent performance, design, and functionality across all devices.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/mob_app/cross_platform_solution_icon.png" alt="Cross-Platform Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Cross-Platform Solutions</h3>
+                        <p>Our cross-platform expertise allows us to develop apps that work seamlessly across multiple operating systems while maintaining a consistent user experience and reducing development time and costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process Section -->
+        <section class="features-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Mobile App Development Process</h2>
+                <p>A systematic approach to delivering successful mobile applications</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/mob_app/discovery_icon.png" alt="Discovery Icon">
+                    <h3>Discovery & Planning</h3>
+                    <p>In-depth analysis of your business requirements and target audience to create a strategic development roadmap</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/mob_app/ui_ux_design_process_icon.png" alt="UI/UX Design Icon">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive interfaces and engaging user experiences that align with your brand identity</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/mob_app/development_icon.png" alt="Development Icon">
+                    <h3>Development</h3>
+                    <p>Building your application with clean, efficient code using the latest mobile development technologies</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/mob_app/testing_icon.png" alt="Testing Icon">
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous testing across devices and operating systems to ensure performance, security, and usability</p>
+        </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/mob_app/deployment_icon.png" alt="Deployment Icon">
+                    <h3>Deployment</h3>
+                    <p>Managing the app store submission process and ensuring smooth launch across all platforms</p>
+        </div>
+        
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/mob_app/maintenance_icon.png" alt="Maintenance Icon">
+                    <h3>Ongoing Support</h3>
+                    <p>Continuous maintenance, updates, and enhancements to keep your app competitive and secure</p>
+                </div>
+    </div>
+</section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Mobile App Projects</h2>
+                <p>A showcase of our successful mobile application developments</p>
+            </div>
+            
+            <div class="projects-slider reveal-item">
+        <div class="projects-track">
+            <div class="project"><img src="../assets/images/Mob-app/Taxparroat-Mobile-1.webp" alt="Taxparroat Mobile App"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-2.png" alt="Mobile App Project 2"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-3.png" alt="Mobile App Project 3"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-4.png" alt="Mobile App Project 4"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-5.png" alt="Mobile App Project 5"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile -6.png" alt="Mobile App Project 6"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile 7.png" alt="Mobile App Project 7"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-8.png" alt="Mobile App Project 8"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-9.png" alt="Mobile App Project 9"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-10.png" alt="Mobile App Project 10"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-11.png" alt="Mobile App Project 11"></div>
+
+            <!-- Duplicate for infinite scrolling -->
+            <div class="project"><img src="../assets/images/Mob-app/Taxparroat-Mobile-1.webp" alt="Taxparroat Mobile App"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-2.png" alt="Mobile App Project 2"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-3.png" alt="Mobile App Project 3"></div>
+            <div class="project"><img src="../assets/images/Mob-app/mobile-4.png" alt="Mobile App Project 4"></div>
+        </div>
+    </div>
+</section>
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal-section">
+            <div class="cta-container reveal-item">
+                <h2>Ready to Build Your Mobile App?</h2>
+                <p>Partner with KutumbInfo for industry-leading mobile app development services that deliver results.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" target="_blank" class="cta-button">Get a Free Consultation</a>
+                    <a href="../work_with_us.html#contact-form" target="_blank" class="secondary-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer Section -->
+    <footer id="about-us">
+        <div class="wrapper">
+            <div class="container">
+                <!-- Quick Links Row -->
+                <div class="quick-links-container">
+                    <!-- Support -->
+                    <div class="about-column support">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);">365 Days</a></li>
+                            <li><a href="javascript:void(0);">8760 Hours</a></li>
+                            <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                            <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location -->
+                    <div class="about-column location">
+                        <h3>Location</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                            <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                            <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                            <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <!-- Explore Us -->
+                    <div class="about-column">
+                        <h3>Explore Us</h3>
+                        <ul>
+                            <li><a href="web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                            <li><a href="mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                            <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                            <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                            <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products -->
+                    <div class="about-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                            <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                            <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                            <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Row with Logo, Links, and Social Media -->
+            <div class="footer-row">
+                <!-- Footer Logo -->
+                <div class="footer-logo">
+                    <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+                </div>
+                
+                <!-- Footer Note with Links and Copyright -->
+                <div class="footer-note">
+                    <!-- Footer Links -->
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                            <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                            <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                            <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+                </div>
+                
+                <!-- Stay Connected -->
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                        <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                        <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+
+

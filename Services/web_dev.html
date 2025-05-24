@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/services/web_dev.html" />
+    <title>Web Development Services | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+<div id="main-content">
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="web-hero-section reveal-section">
+            <div class="web-hero-container">
+                <div class="web-hero-content reveal-item">
+                    <div class="breadcrumb">Home > Services > Web Development</div>
+                    <h1>Web <span class="text-accent">Development</span></h1>
+                    <p>Transforming your ideas into powerful, responsive, and user-friendly web solutions that drive engagement and business growth.</p>
+                </div>
+                <div class="web-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/services/web_dev/web_development_illustration.png" alt="Web Development Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Innovative Web Development Solutions</h2>
+                <p>Empowering your business with custom web solutions that drive growth and engagement</p>
+            </div>
+            
+            <div class="overview-content reveal-item">
+                <p>At KutumbInfo, we provide end-to-end web development solutions tailored to your specific business needs. From strategic planning and UX/UI design to application development, quality assurance, and ongoing support, we cover every step to ensure your digital success.</p>
+                
+                <p>With our extensive experience, our expert team is ready to bring any web project to life—whether it's e-commerce, e-learning, or a completely custom solution tailored to your vision. We craft solutions aligned with your business goals using the latest and most reliable web technologies.</p>
+                
+                <div class="overview-highlight">
+                    <h3>Find the Perfect Web Solution for Your Business</h3>
+                    <p>While different web solutions may seem similar at first glance, we customize our approach for each project, ensuring we address the unique factors that drive success in every scenario. No matter your requirements, we design solutions that resonate with your audience and achieve your business goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Web Development Services</h2>
+                <p>Comprehensive solutions for all your web development needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/web_dev/web_portals_icon.png" alt="Web Portals Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Portals</h3>
+                        <p>We develop custom web portals tailored for various audiences, including customers, business partners, e-commerce users, and interest-based communities. Our portals seamlessly integrate with corporate systems to aggregate real-time data, serving as a reliable source of up-to-date information.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/web_dev/website_development_icon.png" alt="Website Development Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Website Development</h3>
+                        <p>Over 120 businesses, government agencies, and non-profit organizations rely on our websites for showcasing their brands and enhancing corporate presence. We ensure our websites feature user-friendly page editors, enabling effortless management of dynamic content.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/web_dev/ecommerce_icon.png" alt="E-Commerce Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>E-Commerce Solutions</h3>
+                        <p>From creating foundational solutions for startups to building custom e-commerce platforms for large enterprises, our approach enhances business efficiency through scalable microservices architectures. We focus on automating key business processes for greater productivity.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/web_dev/web_applications_icon.png" alt="Web Applications Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Applications</h3>
+                        <p>We create fast, cutting-edge web applications designed to support your business objectives. Our solutions are built to be fully responsive, ensuring they perform seamlessly across all devices. We focus on progressive web technologies to enhance functionality and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+        <!-- Technology Showcase Section -->
+        <section class="tech-showcase-section reveal-section">
+            <div class="tech-showcase-container">
+                <div class="tech-content reveal-item">
+                    <h2>Technology <span class="text-accent">Stack</span></h2>
+                    <p>We leverage cutting-edge technologies to deliver robust, scalable, and high-performing web solutions.</p>
+                    
+                    <ul class="tech-list">
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/nodejs_icon.png" alt="Node.js Icon">
+                            <span>Node.js</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/html5_icon.png" alt="HTML5 Icon">
+                            <span>HTML5</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/css3_icon.png" alt="CSS3 Icon">
+                            <span>CSS3</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/javascript_icon.png" alt="JavaScript Icon">
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/react_icon.png" alt="React Icon">
+                            <span>React</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/bootstrap_icon.png" alt="Bootstrap Icon">
+                            <span>Bootstrap</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/php_icon.png" alt="PHP Icon">
+                            <span>PHP</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/mysql_icon.png" alt="MySQL Icon">
+                            <span>MySQL</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/web_dev/typescript_icon.png" alt="TypeScript Icon">
+                            <span>TypeScript</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-image reveal-item">
+                    <img src="../assets/images/services/web_dev/web_technology_illustration.png" alt="Web Technology Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section class="approach-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Development Approach</h2>
+                <p>A systematic methodology that ensures project success and delivers exceptional results</p>
+            </div>
+            
+            <div class="approach-grid">
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/web_dev/discovery_icon.png" alt="Discovery Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>We begin by understanding your business objectives, target audience, and functional requirements to create a strategic roadmap for your project.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/web_dev/design_icon.png" alt="Design Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>UI/UX Design</h3>
+                        <p>Our designers create intuitive user interfaces and engaging user experiences that resonate with your audience and reflect your brand identity.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/web_dev/development_icon.png" alt="Development Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Development</h3>
+                        <p>We write clean, scalable code for front-end and back-end using modern frameworks and technologies, following industry best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/web_dev/testing_icon.png" alt="Testing Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Testing & QA</h3>
+                        <p>We perform comprehensive testing to eliminate bugs, optimize performance, and enhance security, ensuring a flawless user experience.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/web_dev/deployment_icon.png" alt="Deployment Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Deployment</h3>
+                        <p>We carefully launch your web solution, ensuring smooth integration with existing systems and optimizing for search engines.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/web_dev/support_icon.png" alt="Support Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Maintenance & Support</h3>
+                        <p>We provide ongoing technical support, regular updates, and scalability solutions to meet your growing business demands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Commitment to Excellence</h2>
+                <p>Key attributes that define our web development services</p>
+            </div>
+            
+            <div class="features-grid features-grid-2x3">
+                <div class="feature-card feature-card-large reveal-item">
+                    <img src="../assets/images/services/web_dev/trusted_icon.png" alt="Trusted Icon">
+                    <h3>Trusted</h3>
+                    <p>Proven track record of delivering reliable solutions to businesses of all sizes</p>
+                </div>
+                
+                <div class="feature-card feature-card-large reveal-item">
+                    <img src="../assets/images/services/web_dev/platform_independent_icon.png" alt="Platform Independent Icon">
+                    <h3>Platform Independent</h3>
+                    <p>Solutions that work seamlessly across all devices, browsers, and operating systems</p>
+                </div>
+                
+                <div class="feature-card feature-card-large reveal-item">
+                    <img src="../assets/images/services/web_dev/faster_development_icon.png" alt="Faster Development Icon">
+                    <h3>Faster Development</h3>
+                    <p>Agile methodologies and efficient workflows that accelerate time-to-market</p>
+                </div>
+                
+                <div class="feature-card feature-card-large reveal-item">
+                    <img src="../assets/images/services/web_dev/efficient_icon.png" alt="Efficient Icon">
+                    <h3>Efficient</h3>
+                    <p>Optimized code and performance-driven development for maximum resource efficiency</p>
+                </div>
+                
+                <div class="feature-card feature-card-large reveal-item">
+                    <img src="../assets/images/services/web_dev/secure_icon.png" alt="Secure Icon">
+                    <h3>Secure</h3>
+                    <p>Robust security measures to protect your data and user information</p>
+                </div>
+                
+                <div class="feature-card feature-card-large reveal-item">
+                    <img src="../assets/images/services/web_dev/cross_browser_icon.png" alt="Cross Browser Icon">
+                    <h3>Cross Browser</h3>
+                    <p>Consistent experience across all major browsers and devices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Showcase Section -->
+        <section class="projects-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our Web Projects</h2>
+                <p>A glimpse of our successful web development projects.</p>
+            </div>
+            
+            <div class="projects-slider reveal-item">
+                <div class="projects-track">
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-Projects 1.png" alt="Web Project 1">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-project 2.png" alt="Web Project 2">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-project 3.png" alt="Web Project 3">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-Projects-4.png" alt="Web Project 4">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-project 5.png" alt="Web Project 5">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-project 6.png" alt="Web Project 6">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Native Chefs.png" alt="Native Chefs">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Aerizone.png" alt="Aerizone">
+                    </div>
+
+                    <!-- Duplicate for infinite scrolling -->
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-Projects 1.png" alt="Web Project 1">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-project 2.png" alt="Web Project 2">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-project 3.png" alt="Web Project 3">
+                    </div>
+                    <div class="project">
+                        <img src="../assets/images/Web-app/Web-Projects-4.png" alt="Web Project 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal-section">
+            <div class="cta-container reveal-item">
+                <h2>Ready to Transform Your Digital Presence?</h2>
+                <p>Partner with KutumbInfo for industry-leading web development services that deliver results.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" target="_blank" class="cta-button">Get Started</a>
+<a href="../work_with_us.html#contact-form" target="_blank" class="secondary-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <title>WordPress Development Expertise | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Removed expertise.css as styles are now in style.css and responsive.css -->
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Expertise > WordPress Development</div>
+                    <h1>WordPress <span class="expertise-text-accent">Development</span></h1>
+                    <p>Custom, scalable websites and web applications with the world's most popular CMS</p>
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/expertise/wordpress_images/wordpress_icon.png" alt="WordPress Development">
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="expertise-overview-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>WordPress Development Expertise</h2>
+                    <p>Creating powerful websites and applications with WordPress's flexible platform</p>
+                </div>
+                
+                <div class="expertise-overview-grid">
+                    <div class="expertise-overview-content reveal-item">
+                        <p>At KutumbInfo, our WordPress development team specializes in creating custom, scalable, and high-performing websites that go far beyond typical templates. We leverage WordPress's flexibility and extensive ecosystem to build solutions that perfectly align with your business goals, whether you need a corporate website, e-commerce platform, membership site, or custom web application.</p>
+                        
+                        <p>Our expertise spans the entire WordPress development spectrum, from custom theme and plugin development to WooCommerce implementations, multilingual setups, and enterprise-level integrations. We implement best practices for security, performance optimization, and SEO to ensure your WordPress site not only looks great but also performs exceptionally well and ranks effectively in search engines.</p>
+                        
+                        <div class="expertise-highlight-box">
+                            <h3>The WordPress Advantage</h3>
+                            <p>WordPress powers over 43% of all websites on the internet, making it the world's most popular content management system. Its extensibility, user-friendly admin interface, and vast ecosystem of themes and plugins provide an incredible foundation for websites of all types and sizes. With WordPress, you get the perfect balance of flexibility, scalability, and ease of use, allowing your website to grow and evolve alongside your business without the limitations of other platforms.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-overview-image reveal-item">
+                        <img src="../assets/images/expertise/wordpress_images/wordpress_expertise.png" alt="WordPress Development Expertise">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="expertise-services-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our WordPress Development Services</h2>
+                    <p>Comprehensive WordPress solutions for your business needs</p>
+                </div>
+                
+                <div class="expertise-services-grid">
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/wordpress_images/custom_theme_development.png" alt="Custom Theme Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Custom Theme Development</h3>
+                            <p>We create bespoke WordPress themes tailored to your brand identity, with clean code, responsive design, and optimal performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/wordpress_images/plugin_development.png" alt="Plugin Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Custom Plugin Development</h3>
+                            <p>Our team builds custom WordPress plugins that extend functionality and address specific business requirements not covered by existing solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/wordpress_images/woocommerce_solutions.png" alt="E-commerce Solutions">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>WooCommerce Solutions</h3>
+                            <p>We implement and customize WooCommerce stores with payment gateway integrations, inventory management, and optimized checkout processes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/wordpress_images/performance_optimization.png" alt="Performance Optimization">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Performance Optimization</h3>
+                            <p>We optimize WordPress sites for speed and performance with database optimization, caching solutions, and code refinement.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/wordpress_images/security_implementation.png" alt="Security Hardening">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Security Implementation</h3>
+                            <p>We secure WordPress websites against vulnerabilities with advanced security measures, regular updates, and proactive monitoring.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/wordpress_images/maintenance_support.png" alt="Maintenance & Support">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Maintenance & Support</h3>
+                            <p>Our team provides ongoing WordPress maintenance, updates, backups, security monitoring, and technical support for peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="expertise-process-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our WordPress Development Process</h2>
+                    <p>A systematic approach to delivering exceptional WordPress websites</p>
+                </div>
+                
+                <div class="expertise-process-steps">
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">1</div>
+                        <div class="expertise-step-content">
+                            <h3>Discovery & Planning</h3>
+                            <p>We analyze your business goals, audience needs, and technical requirements to create a comprehensive development strategy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">2</div>
+                        <div class="expertise-step-content">
+                            <h3>Design & Wireframing</h3>
+                            <p>Our designers create mockups and wireframes that align with your brand identity and ensure optimal user experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">3</div>
+                        <div class="expertise-step-content">
+                            <h3>Development & Integration</h3>
+                            <p>We build custom themes, plugins, and functionality while integrating necessary third-party tools and services.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">4</div>
+                        <div class="expertise-step-content">
+                            <h3>Testing & Optimization</h3>
+                            <p>Our QA team performs thorough testing for functionality, responsiveness, performance, and security to ensure everything works flawlessly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">5</div>
+                        <div class="expertise-step-content">
+                            <h3>Launch & Support</h3>
+                            <p>We handle the deployment process and provide ongoing maintenance, updates, and support to keep your WordPress site secure and performing optimally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="expertise-benefits-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Why Choose WordPress</h2>
+                    <p>Key advantages that WordPress brings to your web projects</p>
+                </div>
+                
+                <div class="expertise-benefits-cards">
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/wordpress_images/user_friendly_cms.png" alt="User-Friendly">
+                        </div>
+                        <h3>User-Friendly CMS</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Intuitive admin interface</li>
+                            <li>Easy content management</li>
+                            <li>Minimal training required</li>
+                            <li>Built-in media library</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/wordpress_images/unmatched_flexibility.png" alt="Flexibility">
+                        </div>
+                        <h3>Unmatched Flexibility</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>59,000+ plugins available</li>
+                            <li>Thousands of themes</li>
+                            <li>Customizable to any need</li>
+                            <li>Extendable functionality</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/wordpress_images/seo_friendly.png" alt="SEO">
+                        </div>
+                        <h3>SEO-Friendly</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Clean code structure</li>
+                            <li>Built-in SEO features</li>
+                            <li>Advanced SEO plugins</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/wordpress_images/scalable_solutions.png" alt="Scalability">
+                        </div>
+                        <h3>Scalable Solutions</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Handles high traffic</li>
+                            <li>Enterprise capabilities</li>
+                            <li>Multisite functionality</li>
+                            <li>Cloud hosting compatible</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/wordpress_images/strong_community.png" alt="Community">
+                        </div>
+                        <h3>Strong Community</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Millions of developers</li>
+                            <li>Extensive documentation</li>
+                            <li>Regular updates</li>
+                            <li>Ongoing support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/wordpress_images/cost_effective.png" alt="Cost-Effective">
+                        </div>
+                        <h3>Cost-Effective</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Open-source platform</li>
+                            <li>Lower development costs</li>
+                            <li>Minimal maintenance</li>
+                            <li>Faster time-to-market</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="expertise-benefits-stats reveal-item">
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">43%</div>
+                        <div class="expertise-stat-text">Of all websites worldwide use WordPress</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">64%</div>
+                        <div class="expertise-stat-text">Global CMS market share</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">59K+</div>
+                        <div class="expertise-stat-text">WordPress plugins available</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">455M+</div>
+                        <div class="expertise-stat-text">Monthly WordPress.org visitors</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="expertise-cta-section reveal-section">
+            <div class="container">
+                <div class="expertise-cta-content reveal-item">
+                    <h2>Ready to Build Your WordPress Website?</h2>
+                    <p>Contact us to discuss how our WordPress development expertise can help create a powerful, custom solution for your business.</p>
+                    <a href="../work_with_us.html" class="expertise-cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 
+
+
+
+

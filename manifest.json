@@ -1,0 +1,21 @@
+{
+  "name": "KutumbInfo",
+  "short_name": "KutumbInfo",
+  "description": "Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#192939",
+  "theme_color": "#192939",
+  "icons": [
+    {
+      "src": "assets/images/logo kutumbinfo13.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo kutumbinfo13.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 

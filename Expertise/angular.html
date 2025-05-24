@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <title>Angular Development Expertise | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Removed expertise.css as styles are now in style.css and responsive.css -->
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Expertise > Angular Development</div>
+                    <h1>Angular <span class="expertise-text-accent">Development</span></h1>
+                    <p>Building robust, enterprise-grade applications with Angular's powerful framework for dynamic web solutions.</p>
+                   
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/expertise/angular_images/angular_icon.png" alt="Angular Development">
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview-section" class="expertise-overview-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Angular Development Expertise</h2>
+                    <p>Cutting-edge solutions with modern Angular technology for today's digital challenges</p>
+                </div>
+                
+                <div class="expertise-overview-grid">
+                    <div class="expertise-overview-content reveal-item">
+                        <p>KutumbInfo's dedicated Angular specialists excel in crafting sophisticated, high-performance applications that drive business growth. With years of experience working with Angular's complete ecosystem, we deliver solutions that combine technical excellence with exceptional user experience.</p>
+                        
+                        <p>Our expertise spans the entire Angular technology stack, including RxJS, NgRx, Angular Material, and the Angular CLI. We implement modern development practices like state management, lazy loading, and server-side rendering to create applications that are not only powerful but also optimized for performance and maintainability.</p>
+                        
+                        <div class="expertise-highlight-box">
+                            <h3>Our Angular Technology Proficiency</h3>
+                            <p>We stay at the forefront of Angular development, working with the latest versions and features. Our team has successfully delivered complex applications across industries including fintech, healthcare, e-commerce, and enterprise solutions, creating custom components, designing responsive interfaces, and building scalable architectures that grow with your business needs.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-overview-image reveal-item">
+                        <img src="../assets/images/expertise/angular_images/angular_expertise.png" alt="Angular Development Expertise">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="expertise-services-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our Angular Development Services</h2>
+                    <p>Comprehensive Angular solutions tailored to your business needs</p>
+                </div>
+                
+                <div class="expertise-services-grid">
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/angular_images/custom_angular_apps.png" alt="Custom Angular Applications">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Custom Angular Applications</h3>
+                            <p>We build tailor-made Angular applications that address your specific business requirements, from small business tools to large-scale enterprise systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/angular_images/angular_migration.png" alt="Angular Migration & Upgrade">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Angular Migration & Upgrade</h3>
+                            <p>We help you upgrade legacy AngularJS applications to modern Angular, ensuring a smooth transition while preserving business logic and improving performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/angular_images/progressive_web_apps.png" alt="Progressive Web Apps">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Progressive Web Apps</h3>
+                            <p>Leverage Angular to build progressive web applications that work offline, load quickly, and offer mobile-like experiences with push notifications and home screen installation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/angular_images/ui_ux_development.png" alt="UI/UX Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>UI/UX Development</h3>
+                            <p>Our Angular experts create intuitive, responsive interfaces using modern UI frameworks like Angular Material, PrimeNG, and NgBootstrap to deliver exceptional user experiences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/angular_images/api_integration.png" alt="API Integration">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>API Integration</h3>
+                            <p>We seamlessly integrate your Angular applications with RESTful APIs, GraphQL, and third-party services to create feature-rich, data-driven applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/angular_images/enterprise_angular.png" alt="Enterprise Angular Solutions">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Enterprise Angular Solutions</h3>
+                            <p>We develop scalable, secure, and high-performance Angular applications for enterprise environments, with features like authentication, authorization, and data visualization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="expertise-process-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our Angular Development Process</h2>
+                    <p>A systematic approach to delivering high-quality Angular applications</p>
+                </div>
+                
+                <div class="expertise-process-steps">
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">1</div>
+                        <div class="expertise-step-content">
+                            <h3>Requirements Analysis</h3>
+                            <p>We begin by understanding your business goals, technical requirements, and user needs to create a comprehensive development roadmap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">2</div>
+                        <div class="expertise-step-content">
+                            <h3>Architecture & Design</h3>
+                            <p>Our architects design a robust Angular application structure focusing on scalability, maintainability, and performance optimization.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">3</div>
+                        <div class="expertise-step-content">
+                            <h3>Development & Testing</h3>
+                            <p>We implement the solution using Angular best practices, with continuous integration, unit testing, and code quality checks throughout development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">4</div>
+                        <div class="expertise-step-content">
+                            <h3>Deployment & Integration</h3>
+                            <p>We deploy your Angular application to your preferred environment, integrating with your existing systems and ensuring smooth operation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">5</div>
+                        <div class="expertise-step-content">
+                            <h3>Maintenance & Support</h3>
+                            <p>Our team provides ongoing maintenance, feature enhancements, and version upgrades to keep your Angular application performing at its best.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="expertise-benefits-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Why Choose Angular</h2>
+                    <p>Strategic advantages that Angular brings to your business and development team</p>
+                </div>
+                
+                <div class="expertise-benefits-cards">
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/angular_images/business_efficiency.png" alt="Business Efficiency">
+                        </div>
+                        <h3>Business Efficiency</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Faster time-to-market with reusable components</li>
+                            <li>Reduced development costs through standardization</li>
+                            <li>Improved application reliability and uptime</li>
+                            <li>Lower maintenance costs with modular design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/angular_images/technical_excellence.png" alt="Technical Excellence">
+                        </div>
+                        <h3>Technical Excellence</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Robust architecture for complex applications</li>
+                            <li>TypeScript integration for type safety and IDE support</li>
+                            <li>Modern tooling with the Angular CLI ecosystem</li>
+                            <li>Advanced state management capabilities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/angular_images/user_experience.png" alt="User Experience">
+                        </div>
+                        <h3>User Experience</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Blazing-fast page loads with lazy loading</li>
+                            <li>Smooth animations and transitions</li>
+                            <li>Consistent UI with Angular Material</li>
+                            <li>Responsive design across all devices</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/angular_images/future_proof.png" alt="Future-Proof">
+                        </div>
+                        <h3>Future-Proof</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Long-term support from Google</li>
+                            <li>Predictable release cycles and upgrades</li>
+                            <li>Vast ecosystem of libraries and integrations</li>
+                            <li>Backward compatibility emphasis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/angular_images/security.png" alt="Security">
+                        </div>
+                        <h3>Enhanced Security</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Built-in protection against common web vulnerabilities</li>
+                            <li>Strong typing reduces security bugs</li>
+                            <li>Server-side rendering minimizes XSS attacks</li>
+                            <li>Regular security updates from Google</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/angular_images/scalability.png" alt="Scalability">
+                        </div>
+                        <h3>Enterprise Scalability</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Modular architecture for growing applications</li>
+                            <li>Code splitting for performance at scale</li>
+                            <li>Support for internationalization and localization</li>
+                            <li>Microservices-friendly architecture</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="expertise-benefits-stats reveal-item">
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">600K+</div>
+                        <div class="expertise-stat-text">Websites using Angular globally</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">1.5M+</div>
+                        <div class="expertise-stat-text">Developers working with Angular</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">59%</div>
+                        <div class="expertise-stat-text">Fortune 500 companies use Angular</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">80K+</div>
+                        <div class="expertise-stat-text">GitHub stars for Angular repository</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="expertise-cta-section reveal-section">
+            <div class="container">
+                <div class="expertise-cta-content reveal-item">
+                    <h2>Ready to Build Your Angular Application?</h2>
+                    <p>Contact us to discuss how our Angular development expertise can help bring your project to life.</p>
+                    <a href="../work_with_us.html" class="expertise-cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 
+
+
+
+

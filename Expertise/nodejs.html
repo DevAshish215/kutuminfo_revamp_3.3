@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <title>Node.js Development Expertise | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Removed expertise.css as styles are now in style.css and responsive.css -->
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Expertise > Node.js Development</div>
+                    <h1>Node.js <span class="expertise-text-accent">Development</span></h1>
+                    <p>Building scalable, high-performance backend systems and APIs with Node.js's event-driven architecture.</p>
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/expertise/nodejs_images/nodejs_icon.png" alt="Node.js Development">
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="expertise-overview-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Node.js Development Expertise</h2>
+                    <p>Creating powerful backend solutions with JavaScript's event-driven architecture</p>
+                </div>
+                
+                <div class="expertise-overview-grid">
+                    <div class="expertise-overview-content reveal-item">
+                        <p>At KutumbInfo, our Node.js development team specializes in building robust, scalable backend solutions that power modern web applications. We leverage Node.js's non-blocking, event-driven architecture to create high-performance systems that can handle concurrent requests efficiently, making it ideal for real-time applications, microservices, and API development.</p>
+                        
+                        <p>Our expertise spans the entire Node.js ecosystem, including Express.js, Nest.js, Socket.IO, and database integrations with MongoDB, PostgreSQL, and Redis. We implement industry best practices such as modular code organization, comprehensive testing, and CI/CD pipelines to ensure your Node.js applications are maintainable, secure, and optimized for performance.</p>
+                        
+                        <div class="expertise-highlight-box">
+                            <h3>The Node.js Advantage</h3>
+                            <p>Node.js enables JavaScript to run on the server-side, allowing developers to use the same language throughout the entire stack. This unified language approach, combined with Node's event-driven, non-blocking I/O model, results in faster development cycles, improved developer productivity, and exceptional performance for I/O-intensive applications. Whether you're building real-time applications, RESTful APIs, or microservices, Node.js provides the perfect foundation for modern, scalable backend solutions.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-overview-image reveal-item">
+                        <img src="../assets/images/expertise/nodejs_images/nodejs_expertise.png" alt="Node.js Development Expertise">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="expertise-services-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our Node.js Development Services</h2>
+                    <p>Comprehensive Node.js solutions for your business needs</p>
+                </div>
+                
+                <div class="expertise-services-grid">
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/nodejs_images/api_development.png" alt="API Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>RESTful API Development</h3>
+                            <p>We build robust, well-documented REST APIs using Express.js and other Node.js frameworks that allow seamless integration between your front-end and backend systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/nodejs_images/realtime_applications.png" alt="Real-time Applications">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Real-time Applications</h3>
+                            <p>Our team creates responsive real-time applications using Socket.IO and WebSockets for chat platforms, collaborative tools, live dashboards, and gaming applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/nodejs_images/microservices.png" alt="Microservices">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Microservices Architecture</h3>
+                            <p>We design and implement scalable microservices-based applications using Node.js, Docker, and Kubernetes for improved modularity and maintainability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/nodejs_images/fullstack_development.png" alt="Full-stack Development">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Full-stack JavaScript Solutions</h3>
+                            <p>We develop end-to-end applications using Node.js on the backend and modern JavaScript frameworks like React, Angular, or Vue on the frontend.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/nodejs_images/database_integration.png" alt="Database Integration">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Database Integration</h3>
+                            <p>We implement efficient data persistence solutions using MongoDB, PostgreSQL, MySQL, and Redis, with ORM tools like Mongoose and Sequelize.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-service-card reveal-item">
+                        <div class="expertise-service-icon">
+                            <img src="../assets/images/expertise/nodejs_images/maintenance.png" alt="Maintenance & Support">
+                        </div>
+                        <div class="expertise-service-content">
+                            <h3>Node.js Maintenance & Support</h3>
+                            <p>Our team provides ongoing maintenance, performance optimization, security updates, and technical support for your Node.js applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="expertise-process-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Our Node.js Development Process</h2>
+                    <p>A systematic approach to delivering exceptional Node.js applications</p>
+                </div>
+                
+                <div class="expertise-process-steps">
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">1</div>
+                        <div class="expertise-step-content">
+                            <h3>Requirements Analysis</h3>
+                            <p>We start by understanding your business goals, system requirements, and technical constraints to create a comprehensive development roadmap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">2</div>
+                        <div class="expertise-step-content">
+                            <h3>Architecture Design</h3>
+                            <p>Our architects design a robust application structure, focusing on modularity, scalability, and performance optimization for your Node.js backend.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">3</div>
+                        <div class="expertise-step-content">
+                            <h3>Development & Testing</h3>
+                            <p>We follow test-driven development practices, implementing features and conducting unit, integration, and performance testing throughout the process.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">4</div>
+                        <div class="expertise-step-content">
+                            <h3>Deployment & Integration</h3>
+                            <p>We implement CI/CD pipelines and containerization for seamless deployment to various environments, ensuring proper integration with other systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-process-step reveal-item">
+                        <div class="expertise-step-number">5</div>
+                        <div class="expertise-step-content">
+                            <h3>Maintenance & Support</h3>
+                            <p>Our team provides ongoing monitoring, performance optimization, security updates, and technical support to keep your Node.js application running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="expertise-benefits-section reveal-section">
+            <div class="container">
+                <div class="section-title reveal-item">
+                    <h2>Why Choose Node.js</h2>
+                    <p>Key advantages that Node.js brings to your projects</p>
+                </div>
+                
+                <div class="expertise-benefits-cards">
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/nodejs_images/performance.png" alt="Performance">
+                        </div>
+                        <h3>High Performance</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Non-blocking I/O model</li>
+                            <li>Event-driven architecture</li>
+                            <li>Efficient handling of concurrent requests</li>
+                            <li>Reduced latency for I/O operations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/nodejs_images/fullstack_javascript.png" alt="Full Stack JavaScript">
+                        </div>
+                        <h3>Full-Stack JavaScript</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Same language frontend and backend</li>
+                            <li>Shared code between client and server</li>
+                            <li>Improved team productivity</li>
+                            <li>Streamlined development process</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/nodejs_images/scalability.png" alt="Scalability">
+                        </div>
+                        <h3>Excellent Scalability</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Horizontal scaling capabilities</li>
+                            <li>Microservices architecture support</li>
+                            <li>Clustering for multi-core systems</li>
+                            <li>Load balancing capabilities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/nodejs_images/rich_ecosystem.png" alt="Rich Ecosystem">
+                        </div>
+                        <h3>Rich Ecosystem</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>NPM package manager with 1M+ modules</li>
+                            <li>Powerful frameworks like Express & Nest.js</li>
+                            <li>Extensive tooling and libraries</li>
+                            <li>Strong community support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/nodejs_images/realtime_applications.png" alt="Real-time Capabilities">
+                        </div>
+                        <h3>Real-time Excellence</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Perfect for chat applications</li>
+                            <li>Live collaboration tools</li>
+                            <li>Real-time dashboards</li>
+                            <li>Gaming and streaming platforms</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="expertise-benefit-card reveal-item">
+                        <div class="expertise-benefit-icon">
+                            <img src="../assets/images/expertise/nodejs_images/development_speed.png" alt="Development Speed">
+                        </div>
+                        <h3>Rapid Development</h3>
+                        <ul class="expertise-benefit-features">
+                            <li>Faster time-to-market</li>
+                            <li>Lower development costs</li>
+                            <li>Easier maintenance</li>
+                            <li>Lightweight codebase</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="expertise-benefits-stats reveal-item">
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">1M+</div>
+                        <div class="expertise-stat-text">Available NPM packages worldwide</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">85%</div>
+                        <div class="expertise-stat-text">Of Fortune 500 companies use Node.js</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">47%</div>
+                        <div class="expertise-stat-text">Global developer preference for backend</div>
+                    </div>
+                    <div class="expertise-stat-item">
+                        <div class="expertise-stat-number">5B+</div>
+                        <div class="expertise-stat-text">Monthly NPM downloads globally</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="expertise-cta-section reveal-section">
+            <div class="container">
+                <div class="expertise-cta-content reveal-item">
+                    <h2>Ready to Build Your Node.js Application?</h2>
+                    <p>Contact us to discuss how our Node.js development expertise can help create powerful, scalable solutions for your business.</p>
+                    <a href="../work_with_us.html" class="expertise-cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 
+
+
+
+

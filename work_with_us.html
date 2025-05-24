@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <title>KutumbInfo - Innovative Digital Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- <link rel="preload" href="navbar_root.html" as="fetch" crossorigin="anonymous"> -->
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+<main class="main-container">
+    <!-- Hero Section -->
+    <section class="hero hero-section bg-dark-blue reveal-section work-with-us-hero" role="banner" aria-labelledby="work-hero-heading">
+        <div class="hero-container">
+            <div class="hero-content reveal-item">
+                <h1 id="work-hero-heading" class="heading-primary">Let's Create Something <span class="text-accent">Extraordinary</span> Together</h1>
+                <p class="text-paragraph">
+                    Partner with KutumbInfo to bring your digital vision to life. Our team of experts is ready to transform your ideas into impactful, innovative solutions.
+                </p>
+                <a href="#contact-form" class="learn-more-btn project-start-btn">Start Your Project</a>
+            </div>
+            
+            <div class="hero-visual reveal-item">
+                <div class="work-hero-image">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="https://img.icons8.com/color/480/null/conference-call--v1.png" alt="Team Collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Us Section -->
+    <section class="why-work-section reveal-section">
+        <div class="section-header reveal-item">
+            <h2>Why Work With Us?</h2>
+            <p>From concept to delivery, we provide exceptional service at every step.</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card reveal-item">
+                <div class="benefit-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1321/1321686.png" alt="Expertise Icon">
+                </div>
+                <h3>Technical Expertise</h3>
+                <p>Our team brings years of experience and cutting-edge technical knowledge to every project.</p>
+            </div>
+            
+            <div class="benefit-card reveal-item">
+                <div class="benefit-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/10729/10729321.png" alt="Personalized Icon">
+                </div>
+                <h3>Personalized Approach</h3>
+                <p>We understand your unique challenges and tailor solutions specifically for your business needs.</p>
+            </div>
+            
+            <div class="benefit-card reveal-item">
+                <div class="benefit-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/16466/16466704.png" alt="Support Icon">
+                </div>
+                <h3>Continuous Support</h3>
+                <p>Our relationship doesn't end at delivery. We provide ongoing support and maintenance for all solutions.</p>
+            </div>
+            
+            <div class="benefit-card reveal-item">
+                <div class="benefit-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7035/7035476.png" alt="Innovation Icon">
+                </div>
+                <h3>Innovative Thinking</h3>
+                <p>We pride ourselves on creative problem-solving and forward-thinking approaches to technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="process-section reveal-section">
+        <div class="section-header reveal-item">
+            <h2>Our Collaboration Process</h2>
+            <p>A seamless journey from initial consultation to successful implementation.</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step reveal-item">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Discovery & Consultation</h3>
+                    <p>We start by understanding your business, goals, and specific challenges in detail.</p>
+                </div>
+            </div>
+            
+            <div class="process-step reveal-item">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Strategy & Planning</h3>
+                    <p>Based on our findings, we develop a comprehensive roadmap and solution architecture.</p>
+                </div>
+            </div>
+            
+            <div class="process-step reveal-item">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Design & Development</h3>
+                    <p>Our team creates your solution with a focus on quality, performance, and user experience.</p>
+                </div>
+            </div>
+            
+            <div class="process-step reveal-item">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Testing & Refinement</h3>
+                    <p>Rigorous quality assurance ensures your solution is reliable and meets all requirements.</p>
+                </div>
+            </div>
+            
+            <div class="process-step reveal-item">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Deployment & Support</h3>
+                    <p>We ensure smooth implementation and provide ongoing support for your solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="contact-form" class="contact-section reveal-section">
+        <div class="contact-container">
+            <div class="contact-info reveal-item">
+                <h2>Ready to Get Started?</h2>
+                <p>Fill out the form and our team will get back to you within 24 hours.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/854/854901.png" alt="Address Icon">
+                        <p>Plot-1, IT Park Rd, Nagpur MH-440022</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9946/9946341.png" alt="Phone Icon">
+                        <p>+91-895 611 8607</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2164/2164894.png" alt="Email Icon">
+                        <p>connect@kutumbinfo.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form reveal-item">
+                <form action="#contact-form" method="POST" class="inquiry-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name *" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder="Company Name *" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <input type="email" id="email" name="email" placeholder="Email Address *" required>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="service" name="service">
+                            <option value="" disabled selected>Service You're Interested In</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="mobile-app">Mobile App Development</option>
+                            <option value="custom-software">Custom Software</option>
+                            <option value="api-development">API Development</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project *" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq-section reveal-section">
+        <div class="section-header reveal-item">
+            <h2>Frequently Asked Questions</h2>
+            <p>Answers to common questions about working with KutumbInfo.</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="static-faq-item reveal-item">
+                <h3>What types of businesses do you work with?</h3>
+                <p>We work with businesses of all sizes, from startups to large enterprises. Our clients span across various industries, including healthcare, fintech, education, e-commerce, professional services, and more.</p>
+            </div>
+            
+            <div class="static-faq-item reveal-item">
+                <h3>How long does a typical project take?</h3>
+                <p>Project timelines vary depending on scope and complexity. A simple website might take 4-6 weeks, while a comprehensive custom software solution could take 3-6 months. We'll provide you with a detailed timeline during our initial consultation.</p>
+            </div>
+            
+            <div class="static-faq-item reveal-item">
+                <h3>What is your pricing structure?</h3>
+                <p>We offer flexible pricing models, including fixed-price quotes, hourly rates, and retainer agreements. The pricing depends on the project requirements, complexity, and timeline. We'll discuss the best option for your specific needs during consultation.</p>
+            </div>
+            
+            <div class="static-faq-item reveal-item">
+                <h3>Do you provide ongoing maintenance and support?</h3>
+                <p>Yes, we offer comprehensive maintenance and support services for all our solutions. We can provide regular updates, security patches, feature enhancements, and technical support through various service level agreements based on your needs.</p>
+            </div>
+            
+            <div class="static-faq-item reveal-item">
+                <h3>Can you work with existing systems and technologies?</h3>
+                <p>Absolutely! We specialize in both creating new solutions and integrating with existing systems. Our team is experienced in a wide range of technologies and can develop solutions that work seamlessly with your current infrastructure.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+        <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                                <div class="footer-links">                    <ul>                        <li><a href="terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>                        <li><a href="terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>                        <li><a href="terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>                        <li><a href="sitemap.html" target="_blank">Sitemap</a></li>                    </ul>                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Ensure mobile menu initialization
+      document.addEventListener("DOMContentLoaded", function() {
+        // Initialize all site functionality
+        if (typeof initScrollAnimations === 'function') {
+          initScrollAnimations();
+        }
+        if (typeof initializeCounters === 'function') {
+          initializeCounters();
+        }
+        if (typeof setupIntersectionObserver === 'function') {
+          setupIntersectionObserver();
+        }
+        if (typeof createParticles === 'function') {
+          createParticles();
+        }
+        // Initialize mobile navigation components
+        if (typeof initializeNavbarToggle === 'function') {
+          initializeNavbarToggle();
+        }
+        if (typeof initializeDropdowns === 'function') {
+          initializeDropdowns();
+        }
+        if (typeof initializeMobileNavigation === 'function') {
+          initializeMobileNavigation();
+        }
+        
+        // Additional dropdown initialization for mobile
+        if (window.innerWidth <= 768) {
+          // Get all dropdown toggles
+          const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+          
+          // Ensure they have the correct click behavior
+          dropdownToggles.forEach(toggle => {
+            // Remove existing click event listeners by cloning the element
+            const newToggle = toggle.cloneNode(true);
+            toggle.parentNode.replaceChild(newToggle, toggle);
+            
+            // Add the click event handler directly to the onclick attribute
+            newToggle.onclick = function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              console.log("Direct toggle click", this);
+              
+              // Get the dropdown
+              const dropdown = this.closest('.dropdown');
+              
+              // Close all other dropdowns
+              document.querySelectorAll('.dropdown.active').forEach(active => {
+                if (active !== dropdown) {
+                  active.classList.remove('active');
+                  const content = active.querySelector('.dropdown-content');
+                  if (content) {
+                    content.style.display = 'none';
+                    content.style.visibility = 'hidden';
+                  }
+                }
+              });
+              
+              // Toggle current dropdown
+              dropdown.classList.toggle('active');
+              
+              // Get dropdown content
+              const dropdownContent = dropdown.querySelector('.dropdown-content');
+              
+              if (dropdown.classList.contains('active')) {
+                // Show dropdown content and ensure all items are visible
+                dropdownContent.style.display = 'block';
+                dropdownContent.style.height = 'auto';
+                dropdownContent.style.visibility = 'visible';
+                dropdownContent.style.opacity = '1';
+                dropdownContent.style.zIndex = '1001';
+                
+                // Make all dropdown boxes visible
+                const dropdownBoxes = dropdownContent.querySelectorAll('.dropdown-box');
+                dropdownBoxes.forEach(box => {
+                  box.style.display = 'flex';
+                  box.style.visibility = 'visible';
+                  box.style.opacity = '1';
+                  box.style.animation = 'none';
+                  box.style.transform = 'none';
+                  box.style.transition = 'none';
+                  
+                  // Make sure strong elements are visible
+                  const strong = box.querySelector('strong');
+                  if (strong) {
+                    strong.style.display = 'block';
+                    strong.style.visibility = 'visible';
+                    strong.style.opacity = '1';
+                    strong.style.animation = 'none';
+                    strong.style.transform = 'none';
+                    strong.style.transition = 'none';
+                  }
+                });
+              } else {
+                // Hide dropdown content
+                dropdownContent.style.display = 'none';
+                dropdownContent.style.height = '0';
+                dropdownContent.style.opacity = '0';
+                dropdownContent.style.visibility = 'hidden';
+              }
+              
+              return false;
+            };
+          });
+          
+          // Ensure dropdown boxes are clickable
+          const dropdownBoxes = document.querySelectorAll('.dropdown-content .dropdown-box');
+          dropdownBoxes.forEach(box => {
+            // Keep the original onclick attribute
+            const originalOnclick = box.getAttribute('onclick');
+            
+            // Add a more direct click handler
+            box.addEventListener('click', function(e) {
+              e.stopPropagation();
+              console.log("Box clicked:", this);
+              
+              try {
+                // Execute the original onclick
+                if (originalOnclick) {
+                  eval(originalOnclick);
+                }
+                
+                // Close mobile menu after a slight delay
+                setTimeout(() => {
+                  toggleMobileMenu();
+                }, 100);
+              } catch (err) {
+                console.error('Error executing dropdown box click:', err);
+              }
+            });
+          });
+        }
+      });
+    </script>
+</body>
+</html>
+
+
+

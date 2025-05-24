@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KYCPLUS - Comprehensive Know Your Customer solution by KutumbInfo">
+    <meta name="keywords" content="KYCPLUS, KutumbInfo, KYC, identity verification, banking, fintech">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/Products/KYCPLUS.html" />
+    <title>KYCPLUS | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="../why_kutumbinfo.html" class="no-arrow">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../work_with_us.html" class="no-arrow">Work with us</a>
+    </div>
+</nav>
+
+<div id="main-content">
+    <main class="prod-main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Products > Fintech Solutions > KYCPLUS</div>
+                    <h1>KYC<span class="expertise-text-accent">PLUS</span></h1>
+                    <p>Streamlined, Secure, and Smart KYC Verification for Businesses & Individuals. Automated KYC verification solution for KYC, KYB, and Re-KYC.
+Designed for real-time validation, seamless compliance, and simplified processes.</p>
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/product_img/What we offer kyc-img.webp" alt="KYCPLUS Solution">
+                </div>
+            </div>
+        </section>
+
+        <!-- KYC Simplification Partner Section -->
+        <section class="solution-section reveal-section kycplus-section" id="kyc-simplification">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Your KYC Simplification Partner</h2>
+                </div>
+                
+                <div class="overview-content reveal-item">
+                    <div class="overview-text">
+                        <p>KYCPLUS is a cutting-edge, modular eKYC solution designed to simplify identity verification for businesses and individuals. Whether it's KYC, KYB, or Re-KYC, our platform ensures seamless, automated processes tailored to meet regulatory compliance requirements.</p>
+                        
+                        <p>With real-time validation and a user-friendly interface, KYCPLUS empowers businesses to streamline operations, reduce onboarding time, KYC verification time and build trust with their customers, all while maintaining the highest standards of data security.</p>
+                    </div>
+                    
+                    <div class="advantages-container">
+                        <div class="advantages-card">
+                            <div class="card-header">
+                                <h3>Key Advantages</h3>
+                            </div>
+                            <ul class="advantages-list">
+                                <li>
+                                    <div class="icon-container">
+                                        <i class="fas fa-puzzle-piece"></i>
+                                    </div>
+                                    <span>Modular and Customizable Flows</span>
+                                </li>
+                                <li>
+                                    <div class="icon-container">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <span>Real-Time Verification</span>
+                                </li>
+                                <li>
+                                    <div class="icon-container">
+                                        <i class="fas fa-fingerprint"></i>
+                                    </div>
+                                    <span>Diverse Identity Solutions</span>
+                                </li>
+                                <li>
+                                    <div class="icon-container">
+                                        <i class="fas fa-plug"></i>
+                                    </div>
+                                    <span>Seamless Integration</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="advantages-image">
+                            <div class="image-container">
+                                <img src="../assets/images/product_img/KYC What we are index-img.webp" alt="KYC Verification">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Offer Section -->
+        <section class="overview-section reveal-section kycplus-section" id="what-we-offer">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>What We Offer</h2>
+                </div>
+                
+                <div class="overview-content reveal-item">
+                    <div class="overview-text">
+                        <p>Effortless identity verification at your fingertips! From KYC and Re-KYC to KYB, automated and secure solutions ensure real-time compliance, faster onboarding, and a hassle-free experience</p>
+                    </div>
+                    
+                    <!-- KYC Focus Section -->
+                    <div class="kyc-focus-container">
+                        <div class="kyc-focus-content">
+                            <h3>KYC (Know Your Customers)</h3>
+                            <h4>Seamless, Secure, and Compliant KYC Verification</h4>
+                            <p>Simplify identity verification with KYCPLUS—an automated, secure, and compliant solution for businesses. Ensure seamless onboarding, fraud prevention, and regulatory compliance with real-time verification powered by AI and advanced security protocols.</p>
+                        </div>
+                        <div class="kyc-focus-image">
+                            <img src="../assets/images/product_img/What we offer kyc-img.jpg" alt="KYC Verification Process">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Without Complexity Section -->
+        <section class="solution-section reveal-section" id="compliance-complexity">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Compliance Without Complexity</h2>
+                    <p>KYCPLUS simplifies KYC with AI-driven verification, ensuring seamless compliance, fraud prevention, and faster customer onboarding.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="compliance-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>AI & Fraud Prevention</h3>
+                        <p>Advanced AI algorithms detect and prevent fraudulent activities, ensuring secure and reliable verification processes.</p>
+                    </div>
+                    <div class="compliance-card">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Faster Customer Onboarding</h3>
+                        <p>Streamlined verification process reduces onboarding time by up to 80%, improving customer experience.</p>
+                    </div>
+                    <div class="compliance-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Seamless Compliance</h3>
+                        <p>Automatically updated to meet the latest regulatory requirements, ensuring continuous compliance.</p>
+                    </div>
+                    <div class="compliance-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>DigiLocker Enabled KYC</h3>
+                        <p>Secure document verification through DigiLocker integration, ensuring authenticity and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manual Effort Reduction Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>90% Reduction in Manual Effort</h2>
+                <p>Automation has helped businesses eliminate tedious paperwork and verification bottlenecks, streamlining the entire verification process.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Start Your KYC Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- KYB Section -->
+        <section class="solution-section reveal-section" id="kyb-feature">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>KYB (Know Your Business)</h2>
+                </div>
+                
+                <div class="kyb-container">
+                    <div class="kyb-content reveal-item">
+                        <h3>Effortless KYB for Risk-Free Business</h3>
+                        <p>Verify businesses effortlessly with KYCPLUS. Conduct real-time checks on company registration, directors, and Ultimate Beneficial Owners (UBOs) while ensuring regulatory compliance and preventing financial risks.</p>
+                                             
+                    </div>
+                    <div class="kyb-image reveal-item">
+                        <img src="../assets/images/product_img/KYB.webp" alt="Know Your Business">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smart KYB Section -->
+        <section class="solution-section reveal-section" id="smart-kyb">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Smart KYB for Secure Growth</h2>
+                    <p>Streamline business verification with automated KYB checks, real-time data validation, and compliance-driven insights for risk-free partnerships.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="kyb-card">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Business Verification</h3>
+                        <p>Comprehensive verification of business documents, ownership, and legal status.</p>
+                    </div>
+                    <div class="kyb-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Document Validation</h3>
+                        <p>Advanced document verification ensuring authenticity and compliance with regulations.</p>
+                    </div>
+                    <div class="kyb-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Risk Assessment</h3>
+                        <p>Intelligent risk scoring and monitoring for better decision-making.</p>
+                    </div>
+                    <div class="kyb-card">
+                        <div class="card-icon">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <h3>Continuous Monitoring</h3>
+                        <p>Real-time monitoring of business activities and compliance status.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KYB Processing Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>70% Faster KYB Processing</h2>
+                <p>KYCPLUS reduced KYB processing time by 70%, enabling faster, hassle-free, and fully compliant business onboarding.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Start Your KYC Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Re-KYC Section -->
+        <section class="solution-section reveal-section kycplus-section" id="rekyc-feature">
+            <div class="prod-container">
+                <div class="rekyc-container">
+                    <div class="rekyc-content reveal-item">
+                        <h3>Automated Re-KYC for Smarter Compliance</h3>
+                        <p>Ensure seamless customer record updates with AI-driven Re-KYC. Automate identity verification, reduce manual effort, and stay compliant with evolving regulations—delivering a hassle-free experience for businesses and customers alike.</p>
+                    </div>
+                    <div class="rekyc-image reveal-item">
+                        <img src="../assets/images/product_img/rekyc-img.webp" alt="Re-KYC Solution">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fast, Secure, Compliant Re-KYC Section -->
+        <section class="solution-section reveal-section" id="fast-rekyc">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Fast, Secure, Compliant Re-KYC</h2>
+                    <p>Automate Re-KYC with AI-driven verification, exceptional compliance, and real-time updates—ensuring accuracy, security, and effortless regulatory adherence.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="rekyc-card">
+                        <div class="card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Automated Reminders</h3>
+                        <p>Smart notification system for timely KYC updates and renewals.</p>
+                    </div>
+                    <div class="rekyc-card">
+                        <div class="card-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Update History</h3>
+                        <p>Comprehensive tracking of all KYC updates and modifications.</p>
+                    </div>
+                    <div class="rekyc-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure Storage</h3>
+                        <p>Encrypted storage of all KYC documents and verification records.</p>
+                    </div>
+                    <div class="rekyc-card">
+                        <div class="card-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h3>Compliance Check</h3>
+                        <p>Automated verification of updated information against regulatory requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- financial institutions now prioritize Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>85% of Financial Institutions Prioritize Digital Re-KYC</h2>
+                <p>Financial institutions now prioritize digital Re-KYC to streamline regulatory processes and prevent fraud. Stay ahead with KYCPLUS.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Start Your KYC Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tailored KYC Solutions Section -->
+        <section class="solution-section reveal-section kycplus-section" id="industry-solutions">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Tailored KYC Solutions Across Industries</h2>
+                    <p>Our KYC verification service is trusted by diverse industries, delivering secure, compliant, and efficient solutions tailored to your sector's needs.</p>
+                </div>
+                
+                <div class="industry-boxes reveal-item">
+                    <!-- Banking & Financial Services -->
+                    <div class="industry-box">
+                        <div class="box-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Banking & Financial Services</h3>
+                    </div>
+                    
+                    <!-- Travel & Hospitality -->
+                    <div class="industry-box">
+                        <div class="box-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Travel & Hospitality</h3>
+                    </div>
+                    
+                    <!-- Telecommunication -->
+                    <div class="industry-box">
+                        <div class="box-icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3>Telecommunication</h3>
+                    </div>
+                    
+                    <!-- Non-Banking Financial Companies -->
+                    <div class="industry-box">
+                        <div class="box-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Non-Banking Financial Companies</h3>
+                    </div>
+                    
+                    <!-- Government Services -->
+                    <div class="industry-box">
+                        <div class="box-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Government Services</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5x Faster Document Verification Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>5x Faster Document Verification</h2>
+                <p>AI-powered OCR and automation reduce manual review time, ensuring instant verification and improved customer experience.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Start Your KYC Journey</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <!-- Removed reference to products.js as functionality has been merged into main.js -->
+</body>
+</html> 
+
+

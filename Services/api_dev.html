@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/services/api_dev.html" />
+    <title>API Development Services | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+
+<div id="main-content">
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="web-hero-section reveal-section">
+            <div class="web-hero-container">
+                <div class="web-hero-content reveal-item">
+                    <div class="breadcrumb">Home > Services > API Development</div>
+                    <h1>API <span class="text-accent">Development</span></h1>
+                    <p>Building robust, scalable, and secure APIs that connect systems, streamline data exchange, and enhance application functionality.</p>
+                </div>
+                <div class="web-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/services/api_dev_img/api_dev_illustration.png" alt="API Development Illustration">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Overview Section -->
+        <section class="overview-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Seamless API Solutions</h2>
+                <p>Creating powerful connections between applications and systems</p>
+            </div>
+            
+            <div class="overview-content reveal-item">
+                <p>At KutumbInfo, we specialize in designing and developing secure, scalable, and high-performance APIs that serve as the backbone of your applications. Our expertise ensures seamless communication between diverse platforms and services, enabling smooth data exchange, automation, and enhanced functionality.</p>
+                
+                <p>By leveraging the latest technologies, industry best practices, and robust security measures, we create APIs that are not only efficient and reliable but also future-proof. Whether you're looking to integrate third-party services, build custom microservices, or enhance interoperability across different systems, our API solutions provide the flexibility and performance your business needs to thrive in today's digital ecosystem.</p>
+                
+                <div class="overview-highlight">
+                    <h3>Why Choose Our API Development Services?</h3>
+                    <p>Our API development approach focuses on creating solutions that are highly reliable, extensively documented, and designed for scalability. We build APIs that not only meet your current integration needs but also adapt to future requirements, ensuring long-term value for your business.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our API Development Services</h2>
+                <p>Comprehensive API solutions for modern applications</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/api_dev_img/restful_api.png" alt="RESTful APIs Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>RESTful API Development</h3>
+                        <p>We develop robust RESTful APIs that enable structured and scalable communication for web and mobile applications. Designed for efficiency and consistency, our APIs facilitate seamless data exchange, improving performance and user experience across platforms.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/api_dev_img/graphql_api.png" alt="GraphQL APIs Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>GraphQL API Development</h3>
+                        <p>Our GraphQL APIs provide a flexible data-fetching approach, allowing clients to request only the needed data. With reduced network overhead and improved efficiency, they empower developers to build highly interactive, high-performance applications.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/api_dev_img/third_party_integration.png" alt="Third-party Integration Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Third-party API Integration</h3>
+                        <p>We seamlessly integrate third-party APIs to enhance your applications with external services like payment gateways, social media, maps, and analytics platforms. Our secure and optimized integrations ensure smooth functionality and minimal disruptions.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/api_dev_img/microservices.png" alt="Microservices Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Microservices Architecture</h3>
+                        <p>We design and implement microservices-based architectures with well-defined APIs, enabling modular, scalable, and maintainable application development. This approach allows for independent deployment and scaling of individual components.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/api_dev_img/websocket.png" alt="WebSocket APIs Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>WebSocket API Development</h3>
+                        <p>We build real-time communication solutions using WebSocket APIs, enabling bidirectional data flow for applications requiring instant updates like chat applications, live dashboards, collaborative tools, and notification systems.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <img src="../assets/images/services/api_dev_img/api_security.png" alt="API Security Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>API Security & Management</h3>
+                        <p>We implement robust authentication, encryption, rate limiting, and access control measures to protect your APIs. Our comprehensive security approach ensures data integrity while maintaining high performance and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Showcase Section -->
+        <section class="tech-showcase-section reveal-section">
+            <div class="tech-showcase-container">
+                <div class="tech-content reveal-item">
+                    <h2>API <span class="text-accent">Technologies</span></h2>
+                    <p>We leverage cutting-edge technologies to deliver robust, secure, and high-performing API solutions.</p>
+                    
+                    <ul class="tech-list">
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/nodejs.png" alt="Node.js Icon">
+                            <span>Node.js</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/python.png" alt="Python Icon">
+                            <span>Python</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/php.png" alt="PHP Icon">
+                            <span>PHP</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/dotnet.png" alt=".NET Icon">
+                            <span>.NET</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/java.png" alt="Java Icon">
+                            <span>Java</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/api_gateway.png" alt="API Gateway Icon">
+                            <span>API Gateway</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/docker.png" alt="Docker Icon">
+                            <span>Docker</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/mysql.png" alt="MySQL Icon">
+                            <span>MySQL</span>
+                        </li>
+                        <li class="reveal-item">
+                            <img src="../assets/images/services/api_dev_img/mongodb.png" alt="MongoDB Icon">
+                            <span>MongoDB</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-image reveal-item">
+                    <img src="../assets/images/services/api_dev_img/api_tech_illustration.png" alt="API Technologies Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- API Types Section -->
+        <section class="approach-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Types of API Development</h2>
+                <p>Tailored API solutions for different application needs</p>
+            </div>
+            
+            <div class="approach-grid">
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/api_dev_img/rest_apis.png" alt="REST API Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>REST APIs</h3>
+                        <p>Representational State Transfer (REST) APIs follow standard HTTP methods, making them widely used for web and mobile applications. They offer a lightweight and scalable approach, ensuring compatibility across different platforms.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/api_dev_img/graphql_apis.png" alt="GraphQL Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>GraphQL APIs</h3>
+                        <p>GraphQL APIs provide flexible and efficient data queries, allowing clients to specify exactly what data they need. This reduces over-fetching and under-fetching of data, improving performance for complex applications.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/api_dev_img/soap_apis.png" alt="SOAP Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>SOAP APIs</h3>
+                        <p>Simple Object Access Protocol (SOAP) APIs ensure high security and reliability, making them ideal for enterprise applications and financial systems. They provide strict communication standards and built-in error handling mechanisms.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/api_dev_img/websocket_apis.png" alt="WebSocket Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>WebSocket APIs</h3>
+                        <p>WebSocket APIs enable real-time bidirectional communication, perfect for chat applications, live notifications, and interactive streaming services. They establish persistent connections for instant updates and seamless interactions.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/api_dev_img/microservices_apis.png" alt="Microservices Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Microservices APIs</h3>
+                        <p>Microservices APIs facilitate communication between independent, loosely coupled services in a microservices architecture. They enable modular application development with improved scalability and maintainability.</p>
+                    </div>
+                </div>
+                
+                <div class="approach-card reveal-item">
+                    <div class="approach-icon">
+                        <img src="../assets/images/services/api_dev_img/webhooks.png" alt="Webhook Icon">
+                    </div>
+                    <div class="approach-content">
+                        <h3>Webhooks</h3>
+                        <p>Webhooks provide event-driven API communication, automatically sending data when specific events occur. They're ideal for notifications, real-time updates, and integration scenarios requiring immediate responses to events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process Section -->
+        <section class="features-section reveal-section">
+            <div class="section-header reveal-item">
+                <h2>Our API Development Process</h2>
+                <p>A systematic approach to creating reliable and efficient APIs</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/api_dev_img/requirements_analysis.png" alt="Requirements Analysis Icon">
+                    <h3>Requirements Analysis</h3>
+                    <p>We start by understanding your business needs, integration requirements, and expected API behavior to establish clear objectives and specifications</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/api_dev_img/api_design.png" alt="API Design Icon">
+                    <h3>API Design & Specification</h3>
+                    <p>We create comprehensive API specifications using standards like OpenAPI/Swagger, defining endpoints, data models, authentication methods, and response formats</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/api_dev_img/development_implementation.png" alt="Development Icon">
+                    <h3>Development & Implementation</h3>
+                    <p>Our developers build the API following best practices for code quality, performance optimization, error handling, and adherence to the design specifications</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/api_dev_img/security_implementation.png" alt="Security Icon">
+                    <h3>Security Implementation</h3>
+                    <p>We integrate robust authentication, authorization, data encryption, input validation, and rate limiting to ensure your API is protected against vulnerabilities</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/api_dev_img/testing_qa.png" alt="Testing Icon">
+                    <h3>Testing & QA</h3>
+                    <p>Our comprehensive testing includes unit tests, integration tests, performance testing, security audits, and edge-case validations to ensure reliability</p>
+                </div>
+                
+                <div class="feature-card reveal-item">
+                    <img src="../assets/images/services/api_dev_img/documentation_deployment.png" alt="Documentation Icon">
+                    <h3>Documentation & Deployment</h3>
+                    <p>We create detailed API documentation and support the deployment process, including versioning strategies, monitoring setup, and performance optimization</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal-section">
+            <div class="cta-container reveal-item">
+                <h2>Ready to Integrate Your Systems?</h2>
+                <p>Partner with KutumbInfo for robust API development that connects your applications and streamlines your business processes.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" target="_blank" class="cta-button">Get a Free Consultation</a>
+                    <a href="../work_with_us.html#contact-form" target="_blank" class="secondary-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="about-us">
+        <div class="wrapper">
+            <div class="container">
+                <!-- Quick Links Row -->
+                <div class="quick-links-container">
+                    <!-- Support -->
+                    <div class="about-column support">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);">365 Days</a></li>
+                            <li><a href="javascript:void(0);">8760 Hours</a></li>
+                            <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                            <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location -->
+                    <div class="about-column location">
+                        <h3>Location</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                            <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                            <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                            <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <!-- Explore Us -->
+                    <div class="about-column">
+                        <h3>Explore Us</h3>
+                        <ul>
+                            <li><a href="web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                            <li><a href="mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                            <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                            <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                            <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products -->
+                    <div class="about-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="../Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                            <li><a href="../Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                            <li><a href="../Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                            <li><a href="../Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Row with Logo, Links, and Social Media -->
+            <div class="footer-row">
+                <!-- Footer Logo -->
+                <div class="footer-logo">
+                    <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+                </div>
+                
+                <!-- Footer Note with Links and Copyright -->
+                <div class="footer-note">
+                    <!-- Footer Links -->
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                            <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                            <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                            <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+                </div>
+                
+                <!-- Stay Connected -->
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                        <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                        <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+
+

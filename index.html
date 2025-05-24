@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>KutumbInfo - Innovative Digital Solutions & IT Services</title>
+    <meta name="title" content="KutumbInfo - Innovative Digital Solutions & IT Services">
+    <meta name="description" content="Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions. Expert in Angular, React, Vue.js, and more.">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services, Angular, React, Vue.js, WordPress, Flutter, Java, Node.js, PHP">
+    <meta name="author" content="KutumbInfo">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kutumbinfo.com/">
+    <meta property="og:title" content="KutumbInfo - Innovative Digital Solutions & IT Services">
+    <meta property="og:description" content="Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions. Expert in Angular, React, Vue.js, and more.">
+    <meta property="og:image" content="https://kutumbinfo.com/assets/images/logo kutumbinfo13.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kutumbinfo.com/">
+    <meta property="twitter:title" content="KutumbInfo - Innovative Digital Solutions & IT Services">
+    <meta property="twitter:description" content="Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions. Expert in Angular, React, Vue.js, and more.">
+    <meta property="twitter:image" content="https://kutumbinfo.com/assets/images/logo kutumbinfo13.png">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#192939">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="KutumbInfo">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Performance Monitoring -->
+    <script>
+      // Report Web Vitals
+      function reportWebVitals(metric) {
+        console.log(metric);
+        // You can send these metrics to your analytics service
+        if (metric.name === 'LCP') {
+          console.log('Largest Contentful Paint:', metric.value);
+        } else if (metric.name === 'FID') {
+          console.log('First Input Delay:', metric.value);
+        } else if (metric.name === 'CLS') {
+          console.log('Cumulative Layout Shift:', metric.value);
+        }
+      }
+
+      // Monitor resource loading
+      window.addEventListener('load', () => {
+        const resources = performance.getEntriesByType('resource');
+        resources.forEach(resource => {
+          console.log(`${resource.name}: ${resource.duration}ms`);
+        });
+      });
+
+      // Monitor layout shifts
+      let cumulativeLayoutShift = 0;
+      new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+          if (!entry.hadRecentInput) {
+            cumulativeLayoutShift += entry.value;
+          }
+        }
+        console.log('Cumulative Layout Shift:', cumulativeLayoutShift);
+      }).observe({ entryTypes: ['layout-shift'] });
+
+      // Monitor long tasks
+      new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+          console.log('Long task detected:', entry.duration);
+        }
+      }).observe({ entryTypes: ['longtask'] });
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/css/responsive.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+    <link rel="preload" href="assets/images/logo kutumbinfo13.png" as="image">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KutumbInfo",
+      "url": "https://kutumbinfo.com",
+      "logo": "https://kutumbinfo.com/assets/images/logo kutumbinfo13.png",
+      "description": "Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot-1, IT Park Rd",
+        "addressLocality": "Nagpur",
+        "addressRegion": "Maharashtra",
+        "postalCode": "440022",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-895 611 8607",
+        "contactType": "customer service",
+        "email": "connect@kutumbinfo.com",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/kutumbinfo",
+        "https://www.linkedin.com/company/kutumbinfo",
+        "https://twitter.com/kutumbinfo"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Web Development Services",
+            "description": "High-quality web solutions tailored to your business needs"
+          },
+          {
+            "@type": "Offer",
+            "name": "Mobile Application Development",
+            "description": "Robust mobile apps for iOS and Android platforms"
+          },
+          {
+            "@type": "Offer",
+            "name": "Custom Software Development",
+            "description": "Tailored software to streamline your operations"
+          },
+          {
+            "@type": "Offer",
+            "name": "API Development",
+            "description": "Secure and scalable APIs for your applications"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "position": 1,
+          "name": "Web Development",
+          "description": "High-quality web solutions tailored to your business needs",
+          "provider": {
+            "@type": "Organization",
+            "name": "KutumbInfo"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 2,
+          "name": "Mobile Application Development",
+          "description": "Robust mobile apps for iOS and Android platforms",
+          "provider": {
+            "@type": "Organization",
+            "name": "KutumbInfo"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 3,
+          "name": "Custom Software Development",
+          "description": "Tailored software to streamline your operations",
+          "provider": {
+            "@type": "Organization",
+            "name": "KutumbInfo"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 4,
+          "name": "API Development",
+          "description": "Secure and scalable APIs for your applications",
+          "provider": {
+            "@type": "Organization",
+            "name": "KutumbInfo"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Achievements -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KutumbInfo",
+      "achievement": [
+        {
+          "@type": "Achievement",
+          "name": "Websites Deployed",
+          "value": "250+"
+        },
+        {
+          "@type": "Achievement",
+          "name": "Mobile Applications Developed",
+          "value": "55+"
+        },
+        {
+          "@type": "Achievement",
+          "name": "Software Developed",
+          "value": "27+"
+        },
+        {
+          "@type": "Achievement",
+          "name": "UI/UX Designed",
+          "value": "50+"
+        }
+      ]
+    }
+    </script>
+    
+    <title>KutumbInfo - Innovative Digital Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon2.png" type="image/x-icon" id="favicon" loading="lazy" decoding="async">
+    <!-- <link rel="preload" href="navbar_root.html" as="fetch" crossorigin="anonymous"> -->
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Header Section -->
+    <header class="site-header" role="banner">
+        <!-- Navbar Section -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <img id="navbar-logo" src="assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()" role="button" tabindex="0" loading="lazy" decoding="async">
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="nav-links" id="nav-links" role="menu">
+                <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()" role="menuitem">Why KutumbInfo?</a>
+                
+                <div class="dropdown" role="menuitem">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="services-dropdown">Services <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+                    <div class="dropdown-content" id="services-dropdown" role="menu">
+                        <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                            <img src="assets/images/icons/web-development-icon.png" alt="Web Development Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Web Development</strong>
+                                <p>High-quality web solutions tailored to your business needs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                            <img src="assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Mobile Application Development</strong>
+                                <p>Robust mobile apps for iOS and Android platforms.</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                            <img src="assets/images/icons/software-development-icon.png" alt="Custom Software Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Custom Software Development</strong>
+                                <p>Tailored software to streamline your operations.</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                            <img src="assets/images/icons/ux.png" alt="UI/UX Design Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>UI/UX Design & Development</strong>
+                                <p>Engaging and intuitive designs for a seamless user experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-box" onclick="handleAPIdevClick()">
+                            <img src="assets/images/icons/api-development-icon.png" alt="API Development Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>API Development</strong>
+                                <p>Secure and scalable APIs for your applications.</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                            <img src="assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Maintenance & Support</strong>
+                                <p>Reliable support to keep your systems running smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="expertise-dropdown">Expertise <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+                    <div class="dropdown-content" id="expertise-dropdown" role="menu">
+                        <div class="dropdown-box" onclick="goToAngular()">
+                            <img src="assets/images/icons/angularjs.png" alt="Angular Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Angular Development</strong>
+                                <p>Dynamic web applications using Angular framework.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToReact()">
+                            <img src="assets/images/icons/react.png" alt="React Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>React Development</strong>
+                                <p>High-performance web apps using React.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToVuejs()">
+                            <img src="assets/images/icons/vuejs.png" alt="Vue.js Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Vue.js Development</strong>
+                                <p>Versatile and lightweight web apps using Vue.js.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToWordpress()">
+                            <img src="assets/images/icons/wordpress-logo.png" alt="WordPress Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>WordPress Development</strong>
+                                <p>Customizable websites built on WordPress.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToFlutter()">
+                            <img src="assets/images/icons/flutter-100.png" alt="Flutter Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Flutter Development</strong>
+                                <p>Cross-platform mobile apps with Flutter.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToJava()">
+                            <img src="assets/images/icons/java.png" alt="Java Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Java Development</strong>
+                                <p>Enterprise-grade applications using Java.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToNodejs()">
+                            <img src="assets/images/icons/nodejs.png" alt="Node.js Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Node.js Development</strong>
+                                <p>Scalable backend solutions using Node.js.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box" onclick="goToPhp()">
+                            <img src="assets/images/icons/php.png" alt="PHP Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>PHP Development</strong>
+                                <p>Dynamic websites and applications using PHP.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+                    <div class="dropdown-content" id="products-dropdown" role="menu">
+                        <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                            <img src="assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Non-Fintech Products:</strong>
+                                <ul>                                    
+                                    <li>School Management</li>
+                                    <li>Nagar Parishad Management Software</li>
+                                    <li>Rental Solution (PCT)</li>
+                                    <li>Borwell Management System</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                            <img src="assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Fintech Products:</strong>
+                                <ul>
+                                    <li>KYCPLUS</li>
+                                    <li>AZAPI OCR & CAPTCHA APIs</li>
+                                    <li>RPACPC</li>
+                                    <li>WPS Nexus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="associate-dropdown">Associate Venture <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+                    <div class="dropdown-content" id="associate-dropdown" role="menu">
+                        <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                            <img src="assets/images/azlogic.png" alt="Azlogics Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Azlogics</strong>
+                                <p>Technology solutions and services.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                            <img src="assets/images/webakrutilogo.svg" alt="Webakruti Icon" loading="lazy" decoding="async">
+                            <div>
+                                <strong>Webakruti</strong>
+                                <p>Digital innovation and software development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="main-container">
+            <!-- Hero Section -->
+            <section class="hero hero-section bg-dark-blue reveal-section" role="banner" aria-labelledby="hero-heading">
+                <div class="particles-container">
+                    <!-- Particles will be added via JavaScript -->
+                </div>
+                <div class="hero-container">
+                    <div class="hero-content reveal-item">
+                        <h1 id="hero-heading">Empowering Businesses with Cutting-Edge Products, Reliable Services & Robust APIs Development</h1>
+                        <p>
+                            We provide innovative products, dependable services, and powerful API development to help businesses grow. Our solutions ensure efficiency, scalability, and seamless integration.
+                        </p>
+                        <a href="#we-are" class="learn-more-btn" role="button" aria-label="Learn more about our services">Learn more</a>                    
+                    </div>
+                    
+                    <!-- Added mobile-only hero visual for mobile screens -->
+                    <div class="mobile-hero-visual reveal-item">
+                        <div class="ring-wrapper-mobile">
+                            <!-- Outer rings -->
+                            <div class="outer-ring1-mobile">
+                                <div class="outer-ring2-mobile">
+                                    <div class="outer-ring3-mobile"></div>
+                                </div>
+                            </div>
+
+                            <!-- Inner ring with moving images -->
+                            <div class="ring-mobile">
+                                <div class="image-container-mobile">
+                                    <img src="assets/images/Globe-Full.png" alt="Moving Image" class="moving-image-mobile">
+                                    <img src="assets/images/Globe-Full.png" alt="Moving Image" class="moving-image-mobile duplicate" aria-hidden="true">
+                                </div>
+                            </div>
+
+                            <!-- Glowing stars -->
+                            <div class="glowing-stars" aria-hidden="true">
+                                <div class="star star1"></div>
+                                <div class="star star2"></div>
+                                <div class="star star3"></div>
+                            </div>
+                                
+                            <!-- Globe bars -->
+                            <div class="globebar-mobile bar1" aria-hidden="true"></div>
+                            <div class="globebar-mobile bar2" aria-hidden="true"></div>
+                            <div class="globebar-mobile bar3" aria-hidden="true"></div>
+                            <div class="globebar-mobile bar4" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual reveal-item">
+                        <div class="ring-wrapper">
+                            <!-- Outer rings -->
+                            <div class="outer-ring1">
+                                <div class="outer-ring2">
+                                    <div class="outer-ring3"></div>
+                                </div>
+                            </div>
+
+                            <!-- Inner ring with moving images -->
+                            <div class="ring">
+                                <div class="image-container">
+                                    <img src="assets/images/Globe-Full.png" alt="Moving Image" class="moving-image">
+                                    <img src="assets/images/Globe-Full.png" alt="Moving Image" class="moving-image duplicate" aria-hidden="true">
+                                </div>
+                            </div>
+
+                            <!-- Glowing stars -->
+                            <div class="glowing-stars" aria-hidden="true">
+                                <div class="star star1"></div>
+                                <div class="star star2"></div>
+                                <div class="star star3"></div>
+                                <div class="star star4"></div>
+                                <div class="star star5"></div>
+                                <div class="star star6"></div>
+                            </div>
+                                
+                            <!-- Globe bars -->
+                            <div class="globebar bar1" aria-hidden="true"></div>
+                            <div class="globebar bar2" aria-hidden="true"></div>
+                            <div class="globebar bar3" aria-hidden="true"></div>
+                            <div class="globebar bar4" aria-hidden="true"></div>
+                            <div class="globebar bar5" aria-hidden="true"></div>
+                            <div class="globebar bar6" aria-hidden="true"></div>
+                            <div class="globebar bar7" aria-hidden="true"></div>
+                            <div class="globebar bar8" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- We Are section -->
+            <section id="we-are" class="we-are-section bg-light reveal-section" role="region" aria-labelledby="about-heading">
+                <div class="wrapper">
+                    <h2 class="heading-secondary reveal-item">We are Kutumbinfo</h2>
+                    <div class="we-are-content">
+                        <div class="we-are-subsection reveal-item">
+                            <img src="assets/images/icons/service-offerings-icon.png" alt="Service Offerings" class="we-are-icon">
+                            <h3 class="heading-tertiary">Explore Our Service Offerings</h3>
+                            <p class="text-paragraph">Empowering clients with bespoke, end-to-end services designed to deliver unparalleled value and operational excellence. Through our commitment to quality and efficiency, we enable clients to achieve their goals and enhance their performance.</p>
+                        </div>
+                        <div class="we-are-subsection reveal-item">
+                            <img src="assets/images/icons/product-solutions-icon.png" alt="Product Solutions" class="we-are-icon">
+                            <h3 class="heading-tertiary">Solutions We Deliver – Products</h3>
+                            <p class="text-paragraph">Pioneering superior, cutting-edge products designed to redefine standards and drive innovation across industries. Our solutions are engineered to push the boundaries of technology and inspire progress. Empowering innovation, shaping tomorrow.</p>
+                        </div>
+                        <div class="we-are-subsection reveal-item">
+                            <img src="assets/images/icons/ai-solutions-icon.png" alt="AI Solutions" class="we-are-icon">
+                            <h3 class="heading-tertiary">Smarter AI Solutions</h3>
+                            <p class="text-paragraph">Harnessing the power of artificial intelligence to deliver innovative solutions, optimize operations, and unlock new possibilities for businesses. We leverage AI's transformative potential to develop cutting-edge solutions that address complex business challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="why-choose-us-section bg-white reveal-section" role="region" aria-labelledby="why-choose-heading">
+                <div class="wrapper">
+                    <h2 id="why-choose-heading" class="heading-secondary reveal-item">Why Clients Choose Us</h2>
+                    <p class="subheading reveal-item">We deliver real-time IT solutions designed to accelerate business growth and exceed expectations.</p>
+                    <div class="why-choose-us-content">
+                        <div class="why-choose-us-item reveal-item">
+                            <img src="assets/images/icons/business-understanding-icon.png" alt="Business Analysis" class="why-choose-us-icon">
+                            <div>
+                                <h3 class="heading-tertiary">Comprehensive Business Understanding</h3>
+                                <p>We invest time in understanding your objectives and specific requirements, ensuring customized solutions that align with your goals and target audience.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-us-item reveal-item">
+                            <img src="assets/images/icons/client-collaboration-icon.png" alt="Client Partnership" class="why-choose-us-icon">
+                            <div>
+                                <h3 class="heading-tertiary">Collaborative Planning and Approval</h3>
+                                <p>We work closely with clients, presenting proposed solutions for approval. Your feedback ensures we move forward confidently with tailored strategies.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-us-item reveal-item">
+                            <img src="assets/images/icons/strategic-ideas-icon.png" alt="Innovation Strategy" class="why-choose-us-icon">
+                            <div>
+                                <h3 class="heading-tertiary">Innovative Strategies for Success</h3>
+                                <p>Our experts propose impactful strategies focused on growth and efficiency, helping businesses achieve measurable success.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-us-item reveal-item">
+                            <img src="assets/images/icons/design-development-icon.png" alt="Development Process" class="why-choose-us-icon">
+                            <div>
+                                <h3 class="heading-tertiary">Expert Design and Development</h3>
+                                <p>From user interface design to system architecture, we deliver practical solutions for a seamless experience and scalable systems.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-us-item reveal-item">
+                            <img src="assets/images/icons/quality-assurance-icon.png" alt="Testing Excellence" class="why-choose-us-icon">
+                            <div>
+                                <h3 class="heading-tertiary">Rigorous Quality Assurance</h3>
+                                <p>We prioritize delivering flawless solutions by conducting detailed testing on every feature to ensure reliability and performance excellence.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-us-item reveal-item">
+                            <img src="assets/images/icons/deployment-maintenance-icon.png" alt="Continuous Support" class="why-choose-us-icon">
+                            <div>
+                                <h3 class="heading-tertiary">Seamless Deployment and Maintenance</h3>
+                                <p>After project launch, we ensure uninterrupted service with continuous monitoring, addressing any issues promptly for ongoing functionality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Counter Section -->
+            <section class="counter-section bg-dark-blue reveal-section" role="region" aria-labelledby="achievements-heading">
+                <div class="wrapper">
+                    <h2 id="achievements-heading" class="heading-secondary reveal-item">Our Achievements</h2>
+                    <div class="counter-container" role="list" aria-label="Achievement statistics">
+                        <div class="counter-box reveal-item" role="listitem">
+                            <span class="counter" data-target="250" aria-label="250 plus">0</span><span class="plus" aria-hidden="true">+</span>
+                            <p>Websites Deployed</p>
+                        </div>
+                        <div class="counter-box reveal-item" role="listitem">
+                            <span class="counter" data-target="55" aria-label="55 plus">0</span><span class="plus" aria-hidden="true">+</span>
+                            <p>Mobile Applications Developed</p>
+                        </div>
+                        <div class="counter-box reveal-item" role="listitem">
+                            <span class="counter" data-target="27" aria-label="27 plus">0</span><span class="plus" aria-hidden="true">+</span>
+                            <p>Software Developed</p>
+                        </div>
+                        <div class="counter-box reveal-item" role="listitem">
+                            <span class="counter" data-target="50" aria-label="50 plus">0</span><span class="plus" aria-hidden="true">+</span>
+                            <p>UI/UX Designed</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services-section bg-white reveal-section" role="region" aria-labelledby="services-heading">
+                <div class="wrapper">
+                    <h2 id="services-heading" class="heading-secondary reveal-item">The Services We Offer</h2>
+                    <div class="services-container">
+                        <div class="service-box reveal-item">
+                            <div class="service-icon">
+                                <img src="assets/images/icons/web-development-icon.png" alt="Web Development Services" class="service-icon-img">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="heading-tertiary">Web Development Services</h3>
+                                <p>We pride ourselves on delivering web development services that combine high standards, exceptional quality, affordability, and a keen focus on meeting our clients' expectations. Whether you're looking for a web application, portal, or framework development, you can trust us with any project. In today's digital age, a strong online presence is essential for every business— most users research online before making a purchase.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-box reveal-item">
+                            <div class="service-icon">
+                                <img src="assets/images/icons/mobile-app-icon.png" alt="Mobile App Development Services" class="service-icon-img">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="heading-tertiary">Mobile Application Development</h3>
+                                <p>Our dedicated teams offer end-to-end mobile app development services, creating native, hybrid, and cross-platform mobile solutions across all major platforms—Android, iOS, and Windows. With the majority of people using smartphones today, whether Android or iOS, having a mobile app is essential for providing quick access to your business. If you're looking to expand your reach and boost business through mobile, developing your own app is the way to go.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-box reveal-item">
+                            <div class="service-icon">
+                                <img src="assets/images/icons/software-development-icon.png" alt="Custom Software Development" class="service-icon-img">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="heading-tertiary">Custom Software Development</h3>
+                                <p>We provide comprehensive, full-cycle software development services across a wide range of technology stacks and business domains. We specialize in web-based software application development, tailoring our solutions to meet each client's unique needs and offering innovative ideas to ensure the best user-friendly experience. As a professional software development company, we are committed to delivering high-quality, impactful solutions that drive success.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-box reveal-item">
+                            <div class="service-icon">
+                                <img src="assets/images/icons/api-development-icon.png" alt="API Integration Services" class="service-icon-img">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="heading-tertiary">API Development</h3>
+                                <p>We specialize in creating custom APIs designed to seamlessly integrate and enhance business systems. Our experienced developers craft robust, scalable APIs that ensure smooth interaction across various software platforms, improving both functionality and user experience. Dedicated to delivering high-quality and innovative API solutions, we focus on security and customization to address the unique requirements of each client.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Our Mission Section -->
+            <section class="our-mission-section bg-dark-blue reveal-section" role="region" aria-labelledby="mission-heading">
+                <div class="our-mission-container reveal-item">
+                    <h2 id="mission-heading" class="mission-title">Our Mission</h2>
+                    <h3 class="mission-description heading-tertiary">
+                        Accelerating business growth with high-quality solutions and unwavering commitment to project success, no matter what.
+                    </h3>
+                </div>
+            </section>
+
+            <!-- Our Working Domain Section -->
+            <section class="working-domain-section reveal-section" role="region" aria-labelledby="domain-heading">
+                <div class="wrapper">
+                    <h2 id="domain-heading" class="heading-secondary section-title reveal-item">Our Working Domain</h2>
+                    <div class="domain-container">
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/edtech-icon.png" alt="Education Technology" class="domain-icon-img"></div>
+                            <h4>EdTech</h4>
+                            <p class="domain-description">
+                                Empowering the education sector with digital solutions such as e-learning platforms, virtual classrooms, and AI-powered tutoring systems to enhance learning experiences.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/fintech-icon.png" alt="Financial Technology" class="domain-icon-img"></div>
+                            <h4>FinTech</h4>
+                            <p class="domain-description">
+                                Building secure and innovative financial solutions, including mobile banking apps, payment gateways, blockchain-based systems, and automated investment platforms.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/healthcare-icon.png" alt="Medical Technology" class="domain-icon-img"></div>
+                            <h4>Healthcare & MedTech</h4>
+                            <p class="domain-description">
+                                Enhancing healthcare services with telemedicine apps, electronic health records (EHR), AI-powered diagnostics, and IoT-enabled patient monitoring systems for better medical care.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/ecommerce-icon.png" alt="Online Shopping Solutions" class="domain-icon-img"></div>
+                            <h4>E-Commerce</h4>
+                            <p class="domain-description">
+                                Developing feature-rich e-commerce platforms, custom online stores, and marketplace solutions with integrated payment systems and AI-driven product recommendations.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/custom-dev-icon.png" alt="Bespoke Development" class="domain-icon-img"></div>
+                            <h4>Custom Development</h4>
+                            <p class="domain-description">
+                                Delivering tailored software and applications that meet unique business needs, from SaaS solutions to enterprise-grade applications designed for scalability and efficiency.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/crm-erp-icon.png" alt="Business Management Systems" class="domain-icon-img"></div>
+                            <h4>CRM & ERP</h4>
+                            <p class="domain-description">
+                                Providing enterprise resource planning (ERP) and customer relationship management (CRM) systems to streamline operations, automate workflows, and enhance customer interactions.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/construction-icon.png" alt="Building Industry Solutions" class="domain-icon-img"></div>
+                            <h4>Construction & Engineering</h4>
+                            <p class="domain-description">
+                                Digitizing the construction industry with project management software, building information modeling (BIM), and AI-powered analytics for improved efficiency and safety.
+                            </p>
+                        </div>
+                        <div class="domain-box reveal-item">
+                            <div class="domain-icon"><img src="assets/images/icons/professional-services-icon.png" alt="Business Services Solutions" class="domain-icon-img"></div>
+                            <h4>Professional Services</h4>
+                            <p class="domain-description">
+                                Assisting legal, consulting, and accounting firms with software solutions for client management, workflow automation, data security, and compliance tracking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Partners Section -->
+            <section class="our-partners-section reveal-section" role="region" aria-labelledby="clients-heading">
+                <div class="wrapper">
+                    <h2 id="clients-heading" class="heading-secondary reveal-item">Our Clients</h2>
+                    <div class="partner-slider reveal-item" role="list" aria-label="Client logos">
+                        <div class="partner-track">
+                            <!-- Partner logos -->
+                            <div class="partner"><img src="assets/images/partners/bassein.jpg" alt="Bassein" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/buldana.png" alt="Buldana" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/cleartax.png" alt="Cleartax" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Elite.jpg" alt="Elite" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/ezze-india-logo.png" alt="Ezze India" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/gempare.png" alt="Gempare" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Haier.png" alt="Haier" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Insta financials.jpg" alt="Insta Financials" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/jeet-pinnacle.png" alt="Jeet Pinnacle" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Labtechscientific.jpg" alt="Labtech Scientific" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Logo.jpg" alt="Partner Logo" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/nagarik bank.jpg" alt="Nagarik Bank" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/perfios.png" alt="Perfios" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/placeefy.png" alt="Placeefy" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Polycab.png" alt="Polycab" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/RMGB.jpg" alt="RMGB" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/SRH-HOSPITAL-LOGO-2048x1024.jpg" alt="SRH Hospital" loading="lazy"></div>
+
+                            <!-- Duplicate for infinite scrolling -->
+                            <div class="partner"><img src="assets/images/partners/bassein.jpg" alt="Bassein" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/buldana.png" alt="Buldana" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/cleartax.png" alt="Cleartax" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Elite.jpg" alt="Elite" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/ezze-india-logo.png" alt="Ezze India" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/gempare.png" alt="Gempare" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Haier.png" alt="Haier" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Insta financials.jpg" alt="Insta Financials" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/jeet-pinnacle.png" alt="Jeet Pinnacle" loading="lazy"></div>
+                            <div class="partner"><img src="assets/images/partners/Labtechscientific.jpg" alt="Labtech Scientific" loading="lazy"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Values Section -->
+            <section class="values-section bg-dark-blue" role="region" aria-labelledby="values-heading">
+                <div class="values-grid">
+                    <h2 id="values-heading" class="heading-secondary">Our Values</h2>
+                    
+                    <div class="grid">
+                        <div class="grid-item top-left">Customer First</div>
+                        <div class="grid-item top-right">Value Driven</div>
+                        <div class="grid-item bottom-left">Liable</div>
+                        <div class="grid-item bottom-right">Trustworthy</div>
+                    </div>
+                </div>
+                <div class="message">
+                    <h2>Every step of the way, we stand with our clients</h2>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="about-us" role="contentinfo">
+        <div class="wrapper">
+            <div class="container">
+                <!-- Quick Links Row -->
+                <div class="quick-links-container">
+                    <!-- Support -->
+                    <div class="about-column support">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);" aria-label="24/7 Support">365 Days</a></li>
+                            <li><a href="javascript:void(0);" aria-label="Round the clock support">8760 Hours</a></li>
+                            <li><a href="javascript:void(0);" aria-label="Minute by minute support">525600 Minutes</a></li>
+                            <li><a href="javascript:void(0);" aria-label="Second by second support">31536000 Seconds</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location -->
+                    <div class="about-column location">
+                        <h3>Location</h3>
+                        <ul>
+                            <li><a href="https://maps.google.com/?q=Plot-1,IT+Park+Rd,Nagpur+MH-440022" target="_blank" rel="noopener noreferrer" aria-label="Visit our office location">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                            <li><a href="tel:+918956118607" aria-label="Call us at +91-895 611 8607">+91-895 611 8607</a></li>
+                            <li><a href="mailto:connect@kutumbinfo.com" aria-label="Email us at connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                            <li><a href="mailto:kkutumbinfo@gmail.com" aria-label="Email us at kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <!-- Explore Us -->
+                    <div class="about-column">
+                        <h3>Explore Us</h3>
+                        <ul>
+                            <li><a href="Services/web_dev.html" target="_blank" rel="noopener noreferrer" aria-label="View our web development portfolio">Web Development Portfolio</a></li>
+                            <li><a href="Services/mob_app.html" target="_blank" rel="noopener noreferrer" aria-label="View our mobile application portfolio">Mobile Application Portfolio</a></li>
+                            <li><a href="work_with_us.html" target="_blank" rel="noopener noreferrer" aria-label="Learn more about us">About Us</a></li>
+                            <li><a href="work_with_us.html#contact-form" target="_blank" rel="noopener noreferrer" aria-label="View career opportunities">Careers</a></li>
+                            <li><a href="https://azlogics.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit our associate venture Azlogics">Associate Venture</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products -->
+                    <div class="about-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="Products/KYCPLUS.html" target="_blank" rel="noopener noreferrer" aria-label="Learn about KYC Plus">KYC Plus</a></li>
+                            <li><a href="Products/RPACPC.html" target="_blank" rel="noopener noreferrer" aria-label="Learn about RPACPC">RPACPC</a></li>
+                            <li><a href="Products/AZAPI.html" target="_blank" rel="noopener noreferrer" aria-label="Learn about AZAPI">AZAPI</a></li>
+                            <li><a href="Products/wpx_nexus.html" target="_blank" rel="noopener noreferrer" aria-label="Learn about WPS">WPS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Row with Logo, Links, and Social Media -->
+            <div class="footer-row">
+                <!-- Footer Logo -->
+                <div class="footer-logo">
+                    <img src="assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" width="200" height="60" loading="lazy" decoding="async">
+                </div>
+                
+                <!-- Footer Note with Links and Copyright -->
+                <div class="footer-note">
+                    <!-- Footer Links -->
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="terms_and_conditions.html#terms" target="_blank" rel="noopener noreferrer" aria-label="Read our terms and conditions">Terms and Conditions</a></li>
+                            <li><a href="terms_and_conditions.html#privacy" target="_blank" rel="noopener noreferrer" aria-label="Read our privacy policy">Privacy Policy</a></li>
+                            <li><a href="terms_and_conditions.html#refunds" target="_blank" rel="noopener noreferrer" aria-label="Read our refund policy">Refunds</a></li>
+                            <li><a href="sitemap.html" target="_blank" rel="noopener noreferrer" aria-label="View our sitemap">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+                </div>
+                
+                <!-- Stay Connected -->
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <div class="social-icons" role="list" aria-label="Social media links">
+                        <a href="#" role="listitem" aria-label="Visit our Facebook page"><img src="assets/images/social_icon/facebook.png" alt="Facebook" width="32" height="32" loading="lazy" decoding="async"></a>
+                        <a href="#" role="listitem" aria-label="Contact us on WhatsApp"><img src="assets/images/social_icon/whatsapp.png" alt="WhatsApp" width="32" height="32" loading="lazy" decoding="async"></a>
+                        <a href="#" role="listitem" aria-label="Follow us on Instagram"><img src="assets/images/social_icon/instagram.png" alt="Instagram" width="32" height="32" loading="lazy" decoding="async"></a>
+                        <a href="#" role="listitem" aria-label="Follow us on X (Twitter)"><img src="assets/images/social_icon/twitter.png" alt="X (Twitter)" width="32" height="32" loading="lazy" decoding="async"></a>
+                        <a href="#" role="listitem" aria-label="Connect with us on LinkedIn"><img src="assets/images/social_icon/linkedin.png" alt="LinkedIn" width="32" height="32" loading="lazy" decoding="async"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" class="back-to-top">
+        <span class="arrow-up">↑</span>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

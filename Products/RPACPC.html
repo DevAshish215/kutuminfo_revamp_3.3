@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RPACPC - Automated Credit Processing Center solution by KutumbInfo">
+    <meta name="keywords" content="RPACPC, KutumbInfo, credit processing, automation, fintech, RPA">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/Products/RPACPC.html" />
+    <title>RPACPC | KutumbInfo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="../why_kutumbinfo.html" class="no-arrow">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="../assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="../assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="../assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="../assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="../assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="../assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="../assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="../assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="../assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="../assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="../assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="../assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="../assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="../assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="../assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="../assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="../assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="../assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../work_with_us.html" class="no-arrow">Work with us</a>
+    </div>
+</nav>
+
+<div id="main-content">
+    <main class="prod-main-container">
+        <!-- Hero Section -->
+        <section class="expertise-hero-section reveal-section">
+            <div class="expertise-hero-container">
+                <div class="expertise-hero-content reveal-item">
+                    <div class="expertise-breadcrumb">Home > Products > Fintech Solutions > RPACPC</div>
+                    <h1>RP<span class="expertise-text-accent">ACPC</span></h1>
+                    <p>Simplifying your identity verification complexity. Real time identity verification of an individual and entities for risk free customer onboarding. Get ready APIs for Banking, FinTech, NBFCs, ECommerce, Insurance, Trading, Diligence and Corporates</p>
+               
+                </div>
+                <div class="expertise-hero-image reveal-item">
+                    <div class="expertise-inner-ring"></div>
+                    <img src="../assets/images/product_img/RPACPC img/Rpacpc hero bannercol.webp" alt="RPACPC Solution">
+                </div>
+            </div>
+        </section>
+
+        <!-- Revolutionizing Section -->
+        <section class="solution-section reveal-section" id="revolutionizing">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>Revolutionizing Compliance with Automated Precision</h2>
+                    <p>Comprehensive API Services for Identity & Business Validations and Bulk Verification</p>
+                </div>
+
+                <div class="content-wrapper reveal-item content-flex-row">
+                    <div class="text-content text-flex-1-5">
+                        <p>
+                            RPACPC is your gateway to seamless integrations, offering a suite of powerful API services tailored to meet the evolving needs of businesses. It provides an easy, robust, real-time APIs experience to cut down the hassle of manual business and identity verification. RPACPC API KIT aims to provide super-fast and cost-effective APIs solutions to conduct background checks & checks that the identity proof is authentic, legitimate, and issued by the government.
+                        </p>
+                        <p>
+                            Generic API structure drives end-to-end programming integration easy without limiting and programming language or platform. APIs that capable to perform in real-time every time.
+                        </p>
+                    </div>
+                    <div class="image-content image-flex-1">
+                        <img src="../assets/images/product_img/RPACPC img/Identity-Verification-Solutions-in-India.webp" alt="RPACPC Integration" class="image-rounded-shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features List Section -->
+        <section class="rpa-features-section reveal-section bg-light-gray">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>With RPACPC, you can:</h2>
+                </div>
+                
+                <div class="rpa-features-grid reveal-item">
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>Real-Time Validation</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>Easy API Integration</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>Fraud Prevention Mechanisms</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>Cost-Effective Solution</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>KYC and KYB API Suite</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>Bulk Processing Capability</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>Multi-Device Accessibility</span>
+                        </div>
+                    </div>
+                    <div class="rpa-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle" style="color: #6eaf2a;"></i>
+                        </div>
+                        <div class="feature-text">
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- One-Stop Solutions Section -->
+        <section class="solutions-section reveal-section solutions-section-padded">
+            <div class="prod-container">
+                <div class="prod-section-header reveal-item">
+                    <h2>One-Stop Solutions for Online API Based Verification</h2>
+                </div>
+
+                <!-- Identity Verification Section -->
+                <div class="prod-section-header reveal-item">
+                    <h2 class="category-title"># IDENTITY VERIFICATION</h2>
+                </div>
+
+                <!-- Aadhaar Verification API -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/aadhar verification.webp" alt="Aadhaar Verification API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Aadhaar Verification API</h3>
+                        <div class="solution-description">
+                            <p>
+                                The Aadhaar verification is crucial for various sectors including Financial Institutions, Telecommunications, Healthcare, Education Institutions, and Broking Firms. Being the fundamental identity document in India issued by the Government, it is essential for businesses to verify the Aadhaar of individual users.
+                            </p>
+                            <p>
+                                Let us take the hassle for you, get the RPACPCs Aadhaar Verification API and automate the verification process to streamline your business. Get access to all the demographic details and avoid fraudulent activities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAN Aadhaar Link Status -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/pan-aadhar-link.webp" alt="PAN Aadhaar Link Status" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>PAN Aadhaar Link Status</h3>
+                        <div class="solution-description">
+                            <p>
+                                PAN Aadhaar Link status API provides real-time validation of the linking or seeding status for a given combination of PAN and Aadhaar numbers.
+                            </p>
+                            <p>
+                                According to a circular issued by CBDT India in 2022, individuals who possess PAN numbers are now required to link their PAN with Aadhaar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Driving Licence Verification API -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/driving-Licence.webp" alt="Driving Licence Verification API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-id-card-alt"></i>
+                        </div>
+                        <h3>Driving Licence Verification API</h3>
+                        <div class="solution-description">
+                            <p>
+                                Driving License Verification API offers a comprehensive solution for financial institutions, simplifying the task of confirming the legitimacy of their clients' driver's licenses.
+                            </p>
+                            <p>
+                                Prioritizing reliability and ease of use, this API enables businesses to seamlessly and safely authenticate driving documents, improving their due diligence processes and ensuring alignment with regulatory requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voter ID Verification API -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/voter-id-verification.webp" alt="Voter ID Verification API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-vote-yea"></i>
+                        </div>
+                        <h3>Voter ID Verification API</h3>
+                        <div class="solution-description">
+                            <p>
+                                Voter ID verification API is a vital requirement for institutions and entities seeking a tool for verifying Voter Cards, which serve as a fundamental form of identification needed in various contexts.
+                            </p>
+                            <p>
+                                All Indian citizens aged 18 and above receive a Voter ID card issued by the Election Commission of India. These cards enable the verification of age, name, and address information. Voter ID cards are also referred to as Electors Photo Identity Cards (EPIC).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAN Verification -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/pan_verification.webp" alt="PAN Verification" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-address-card"></i>
+                        </div>
+                        <h3>PAN Verification</h3>
+                        <div class="solution-description">
+                            <p>
+                                In India, the Permanent Account Number (PAN) is extremely significant, both for income tax purposes and as identification documentation. The information on your PAN Card should be accurate to prevent future issues.
+                            </p>
+                            <p>
+                                RPACPC PAN Verification API is a simple, quick and easy-to-use tool that provides information for the needed PAN in real time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Verification Section -->
+                <div class="prod-section-header reveal-item">
+                    <h2 class="category-title"># BUSINESS VERIFICATION</h2>
+                </div>
+
+                <!-- GST Verification API -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/gst-ver-removebg-preview.webp" alt="GST Verification API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h3>GST Verification API</h3>
+                        <div class="solution-description">
+                            <p>
+                                GST verification before filing taxes helps businesses comply with regulations, maintain accurate records, and claim correct tax credits, making the tax filing process smoother and more efficient, RPACPC GST verification API helps you do just that with ease.
+                            </p>
+                            <p>
+                                Want to accelerate the GST process and make it more efficient, convenient, and effective? Check out the GST Verification API from RPACPC, which will provide you with all the necessary details about the GSTIN and assist you in getting started.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAN to GST Verification -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/pan-to-gst.webp" alt="PAN to GST Verification" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>PAN to GST Verification</h3>
+                        <div class="solution-description">
+                            <p>
+                                PAN to GST Verification API simplifies the process of acquiring a GST number for your business by conducting a GST search using your PAN. When you input your PAN number, the API provides the corresponding GST number, along with its active and inactive status. Ensuring the accurate link between PAN and GST is essential for secure and fraud-free transactions for both merchants and users.
+                            </p>
+                            <p>
+                                Utilizing the RPACPC PAN and GST Linkage API, you can effortlessly discover, validate, and retrieve all GST numbers associated with a specific PAN number.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Verification API -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/company-verification.webp" alt="Company Verification API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Company Verification API</h3>
+                        <div class="solution-description">
+                            <p>
+                                The Corporate Identity Number (CIN), regulated by the Registrar of Companies (ROC) & the Ministry of Corporate Affairs (MCA 21), is essential for legal operation. Every company and LLP must possess a valid CIN or LLPIN number for government authorization.
+                            </p>
+                            <p>
+                                RPACPC offers the finest Company Verification API available in the market. Our online Company Verification APIs guarantee accuracy and deliver high-speed performance. These APIs conduct background checks to verify the authenticity and government-issued legitimacy of identity proof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAN to Company Info API -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/pan-to-company-info.webp" alt="PAN to Company Info API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>PAN to Company Info API</h3>
+                        <div class="solution-description">
+                            <p>
+                                We offer the finest PAN to Company Info API available in the market. Our online PAN to Company Info API not only guarantees accuracy but also delivers high-speed performance.
+                            </p>
+                            <p>
+                                This API serves the purpose of conducting background checks to verify the authenticity and government-issued legitimacy of identity proof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FSSAI License Verification -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/fssai-license-verification-api.webp" alt="FSSAI License Verification" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>FSSAI License Verification</h3>
+                        <div class="solution-description">
+                            <p>
+                                FSSAI License Verification API by RPACPC enhances your onboarding process, ensuring it is secure, efficient, and intelligent.
+                            </p>
+                            <p>
+                                This API validates the authenticity of food business operators, providing the confidence that your merchants have the necessary authorization for activities related to food products, including manufacturing, storage, distribution, and export.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIN to PAN -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/dintopan.webp" alt="DIN to PAN" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>DIN to PAN</h3>
+                        <div class="solution-description">
+                            <p>
+                                We offer the finest DIN to PAN API available in the market. Our online DIN to PAN API not only guarantees accuracy but also delivers high-speed performance.
+                            </p>
+                            <p>
+                                These APIs serve the details of din and assassinate PAN number checks to verify the authenticity and government-issued legitimacy of identity proof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IEC Verification -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/iec-verification.webp" alt="IEC Verification" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>IEC Verification</h3>
+                        <div class="solution-description">
+                            <p>
+                                The Importer-Exporter Code (IEC) is a crucial business identification number required for both exports and imports, issued by the Directorate General of Foreign Trade (DGFT).
+                            </p>
+                            <p>
+                                Our IEC verification API enables you to easily confirm the authenticity of importers or exporters by simply inputting their Importer-Exporter code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tax Compliances Section -->
+                <div class="prod-section-header reveal-item">
+                    <h2 class="category-title"># TAX COMPLIANCES</h2>
+                </div>
+
+                <!-- 206AB Compliance Check -->
+                <div class="solution-content reveal-item fintech-solution-card">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/206ab-ver-removebg-preview.webp" alt="206AB Compliance Check" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>206AB Compliance Check</h3>
+                        <div class="solution-description">
+                            <p>
+                                Section 206 of the Income Tax Act is recently introduced vide the Finance Act, 2021 which makes it significant to go through the 206AB Compliance check. As per Section 206, TDS must be deducted if the specified individual fails to file their income tax return.
+                            </p>
+                            <p>
+                                The RPACPC 206AB Compliance Check API provides you with the simplest and most reliable way to check whether or not your vendor fills ITR or can check the vendor's compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAN PAN Verification API -->
+                <div class="solution-content reveal-item fintech-solution-card reverse-layout">
+                    <div class="solution-image">
+                        <img src="../assets/images/product_img/RPACPC img/tan.webp" alt="TAN PAN Verification API" class="solution-img">
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3>TAN PAN Verification API</h3>
+                        <div class="solution-description">
+                            <p>
+                                TAN PAN API is a powerful tool that enables enterprises to perform real-time verification of their customers' or clients' TAN. Not only verification of TAN but also extracts the PAN associated with the TAN.
+                            </p>
+                            <p>
+                                Employing this API, businesses can minimize the risk of mistakes and fraudulent activities, and enhance their overall efficacy and adherence to regulations. Join our API services today and enjoy a streamlined and hassle-free experience of finding your PAN from your TAN.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal-section" role="region">
+            <div class="cta-container reveal-item">
+                <h2>Streamline Your RPA Implementation</h2>
+                <p>Experience the power of intelligent automation with RPACPC. Reduce manual effort, increase accuracy, and transform your business processes.</p>
+                <div class="cta-buttons">
+                    <a href="../work_with_us.html#contact-form" class="cta-button">Request Demo</a>
+                    <a href="../work_with_us.html#contact-form" class="secondary-button">Start Your Automation Journey</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="../Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="../Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="../work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="../work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="../assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="../terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="../terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>
+                        <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="../assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="../assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>
+    // Initialize animations manually for all reveal sections
+    document.addEventListener('DOMContentLoaded', function() {
+        // Force all reveal sections to be visible initially
+        document.querySelectorAll('.reveal-section').forEach(section => {
+            section.classList.add('active');
+            
+            // Animate children with staggered delay
+            const items = section.querySelectorAll('.reveal-item');
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('active');
+                }, 100 + (index * 100)); // Staggered delay based on index
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+

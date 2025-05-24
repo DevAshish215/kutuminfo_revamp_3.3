@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KutumbInfo - Empowering businesses with cutting-edge web development, mobile apps, custom software, and API solutions">
+    <meta name="keywords" content="KutumbInfo, web development, mobile apps, software development, API, IT services">
+    <meta name="author" content="KutumbInfo">
+    <meta name="theme-color" content="#192939">
+    <link rel="canonical" href="https://kutumbinfo.com/" />
+    <title>KutumbInfo - Innovative Digital Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon2.png" type="image/x-icon" id="favicon">
+    <!-- <link rel="preload" href="navbar_root.html" as="fetch" crossorigin="anonymous"> -->
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img id="navbar-logo" src="assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo" onclick="handleHomeClick()">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#" class="no-arrow" onclick="handleWhyKutumbinfoClick()">Why KutumbInfo?</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Services <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="handleWebDevelopmentClick()">
+                    <img src="assets/images/icons/web-development-icon.png" alt="Web Development Icon">
+                    <div>
+                        <strong>Web Development</strong>
+                        <p>High-quality web solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown-box" onclick="handleMobileAppDevClick()">
+                    <img src="assets/images/icons/mobile-app-icon.png" alt="Mobile Application Icon">
+                    <div>
+                        <strong>Mobile Application Development</strong>
+                        <p>Robust mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleCustomSoftDevClick()">
+                    <img src="assets/images/icons/software-development-icon.png" alt="Custom Software Icon">
+                    <div>
+                        <strong>Custom Software Development</strong>
+                        <p>Tailored software to streamline your operations.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleUIUXDesignClick()">
+                    <img src="assets/images/icons/ux.png" alt="UI/UX Design Icon">
+                    <div>
+                        <strong>UI/UX Design & Development</strong>
+                        <p>Engaging and intuitive designs for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleAPIdevClick()">
+                    <img src="assets/images/icons/api-development-icon.png" alt="API Development Icon">
+                    <div>
+                        <strong>API Development</strong>
+                        <p>Secure and scalable APIs for your applications.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-box" onclick="handleMaintainanceSupportClick()">
+                    <img src="assets/images/icons/maintenance-nav-icon.png" alt="Maintenance & Support Icon">
+                    <div>
+                        <strong>Maintenance & Support</strong>
+                        <p>Reliable support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Expertise <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box" onclick="goToAngular()">
+                    <img src="assets/images/icons/angularjs.png" alt="Angular Icon">
+                    <div>
+                        <strong>Angular Development</strong>
+                        <p>Dynamic web applications using Angular framework.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToReact()">
+                    <img src="assets/images/icons/react.png" alt="React Icon">
+                    <div>
+                        <strong>React Development</strong>
+                        <p>High-performance web apps using React.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToVuejs()">
+                    <img src="assets/images/icons/vuejs.png" alt="Vue.js Icon">
+                    <div>
+                        <strong>Vue.js Development</strong>
+                        <p>Versatile and lightweight web apps using Vue.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToWordpress()">
+                    <img src="assets/images/icons/wordpress-logo.png" alt="WordPress Icon">
+                    <div>
+                        <strong>WordPress Development</strong>
+                        <p>Customizable websites built on WordPress.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToFlutter()">
+                    <img src="assets/images/icons/flutter-100.png" alt="Flutter Icon">
+                    <div>
+                        <strong>Flutter Development</strong>
+                        <p>Cross-platform mobile apps with Flutter.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToJava()">
+                    <img src="assets/images/icons/java.png" alt="Java Icon">
+                    <div>
+                        <strong>Java Development</strong>
+                        <p>Enterprise-grade applications using Java.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToNodejs()">
+                    <img src="assets/images/icons/nodejs.png" alt="Node.js Icon">
+                    <div>
+                        <strong>Node.js Development</strong>
+                        <p>Scalable backend solutions using Node.js.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box" onclick="goToPhp()">
+                    <img src="assets/images/icons/php.png" alt="PHP Icon">
+                    <div>
+                        <strong>PHP Development</strong>
+                        <p>Dynamic websites and applications using PHP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;" role="button" aria-expanded="false" aria-controls="products-dropdown">Products <span class="dropdown-arrow" aria-hidden="true">v</span></a>
+            <div class="dropdown-content" id="products-dropdown" role="menu">
+                <div class="dropdown-box dropdown-box-width" onclick="goToNonFintech()">
+                    <img src="assets/images/icons/non-fintech.png" alt="Non-Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Non-Fintech Products:</strong>
+                        <ul>                                    
+                            <li>School Management</li>
+                            <li>Nagar Parishad Management Software</li>
+                            <li>Rental Solution (PCT)</li>
+                            <li>Borwell Management System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box dropdown-box-width" onclick="goToFintech()">
+                    <img src="assets/images/icons/fintech.png" alt="Fintech Products Icon" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Fintech Products:</strong>
+                        <ul>
+                            <li>KYCPLUS</li>
+                            <li>AZAPI OCR & CAPTCHA APIs</li>
+                            <li>RPACPC</li>
+                            <li>WPS Nexus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(this); return false;">Associate Venture <span class="dropdown-arrow">v</span></a>
+            <div class="dropdown-content">
+                <div class="dropdown-box hover-block" onclick="window.open('https://azlogics.com/', '_blank');">
+                    <img src="assets/images/azlogic.png" alt="Azlogics Icon">
+                    <div>
+                        <strong>Azlogics</strong>
+                        <p>Technology solutions and services.</p>
+                    </div>
+                </div>
+                <div class="dropdown-box hover-block" onclick="window.open('https://www.webakruti.com/', '_blank');">
+                    <img src="assets/images/webakrutilogo.svg" alt="Webakruti Icon">
+                    <div>
+                        <strong>Webakruti</strong>
+                        <p>Digital innovation and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="no-arrow" onclick="handleWorkWithUsClick()">Work with us</a>
+    </div>
+</nav>
+<main class="main-container">
+    <!-- Hero Section -->
+    <section class="why-hero-section reveal-section">
+        <div class="why-hero-container">
+            <div class="why-hero-content reveal-item">
+                <h1>Why Choose <span class="brand-name">Kutumbinfo</span></h1>
+                <p>We're more than just a development company—we're your technology partners committed to delivering innovative, scalable, and high-performing digital solutions tailored to your unique business needs.</p>
+            </div>
+            <div class="why-hero-image reveal-item">
+                <div class="expertise-inner-ring"></div>
+                <img src="assets/images/why_kutumbinfo_icons/hero_illustration.png" alt="Why Choose Us Illustration">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Overview of Kutumbinfo Section -->
+    <section class="overview-section reveal-section">
+        <div class="section-header reveal-item">
+            <h2>Overview of Kutumbinfo</h2>
+            <p class="center-para">Empowering businesses through innovative technology solutions</p>
+        </div>
+        
+        <div class="overview-container reveal-item">
+            <div class="overview-content">
+                <p>Kutumbinfo Private Limited empowers businesses through innovative IT solutions. Driven by a commitment to excellence and a spirit of innovation, we deliver customized services designed to align with your specific business goals.</p>
+                
+                <p>We specialize in web development, creating stunning and high-performance websites that elevate your brand. Our web applications are scalable and dynamic, ensuring seamless operations for your business. We also develop custom mobile applications for both iOS and Android, delivering engaging user experiences. Our software development services provide powerful, tailor-made solutions to enhance efficiency. Additionally, our ERP solutions integrate enterprise resource planning systems for streamlined management, while our API development ensures secure and robust connectivity for smooth data integration.</p>
+                
+                <p>We are also a product-based technology company focused on building innovative, scalable solutions that empower businesses across a wide range of industries. With a strong foundation in both fintech and non-fintech domains, we specialize in designing, developing, and delivering cutting-edge products that drive digital transformation and operational efficiency.</p>
+                
+                <p>In the fintech space, our solutions cater to digital banking, payments, lending, investment platforms, and financial analytics—offering secure, compliant, and user-centric experiences. Simultaneously, we extend our expertise to non-fintech sectors, developing versatile products for industries such as retail, logistics, healthcare, and education.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Core Strengths Section -->
+    <section class="additional-strengths-section reveal-section">
+        <div class="section-header reveal-item">
+            <h2>Our Core Strengths</h2>
+            <p class="center-para">What sets us apart in the technology landscape</p>
+        </div>
+        
+        <div class="additional-strengths-content reveal-item">
+            <p>Our core strength lies in a product-first mindset, combined with deep domain knowledge and a passion for solving complex challenges through technology. Whether it's launching a new fintech product or optimizing processes in a non-fintech business, we partner with our clients to deliver value-driven innovation. Also, delivering tailored technology services to optimize operations across industries, we collaborate closely with our clients to drive value, accelerate growth, and enable meaningful IT transformation.</p>
+        </div>
+        
+        <div class="strengths-grid">
+            <div class="strength-card reveal-item">
+                <div class="strength-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/expert_team.png" alt="Expert Team Icon">
+                </div>
+                <div class="strength-content">
+                    <h3>Expert Team</h3>
+                    <p>Our highly skilled developers, designers, and strategists bring extensive experience and continuously upgrade their skills to stay ahead of emerging trends.</p>
+                </div>
+            </div>
+            
+            <div class="strength-card reveal-item">
+                <div class="strength-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/custom_solutions.png" alt="Custom Solutions Icon">
+                </div>
+                <div class="strength-content">
+                    <h3>Custom Solutions</h3>
+                    <p>We take a customized approach to every project, crafting tailored solutions that maximize efficiency and impact for your unique business needs.</p>
+                </div>
+            </div>
+            
+            <div class="strength-card reveal-item">
+                <div class="strength-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/technology.png" alt="Technology Icon">
+                </div>
+                <div class="strength-content">
+                    <h3>Cutting-Edge Technologies</h3>
+                    <p>We leverage the latest programming languages, frameworks, and tools including Angular, React, Node.js, PHP, and Java for optimal performance.</p>
+                </div>
+            </div>
+            
+            <div class="strength-card reveal-item">
+                <div class="strength-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/client_centric.png" alt="Client-Centric Icon">
+                </div>
+                <div class="strength-content">
+                    <h3>Client-Centric Approach</h3>
+                    <p>We prioritize transparent communication and collaboration, ensuring careful attention to deadlines and delivering high-quality solutions on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Why We Are Different Section -->
+    <section class="different-section reveal-section">
+        <div class="container">
+            <div class="section-header reveal-item">
+                <h2>Why We Are Different</h2>
+                <p class="center-para">Our unique approach to delivering exceptional value to clients</p>
+            </div>
+            
+            <div class="different-grid">
+                <div class="different-content reveal-item">
+                    <p>At KUTUMBINFO, we offer the best of both worlds — innovative products and tailored services — designed to meet the evolving needs of our clients. Our vision guides every cycle of development and implementation, ensuring clarity and purpose in everything we do.</p>
+                    
+                    <p>KUTUMBINFO was founded with a dream to serve clients better, a vision that permeates our entire organization regardless of role or position. While we maintain a process-driven approach to ensure quality and consistency, our organization is also a hub of creativity and innovation.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Our Creative Approach</h3>
+                        <p>We inspire our team members to develop out-of-the-box ideas and participate in professionally fulfilling work. This balanced approach—combining structured processes with creative freedom—allows us to deliver solutions that are both technically excellent and genuinely innovative.</p>
+                    </div>
+                </div>
+                <div class="different-image reveal-item">
+                    <img src="assets/images/why_kutumbinfo_icons/different_illustration.png" alt="What Makes Us Different Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organisation Structure Section -->
+    <section class="org-structure-section reveal-section">
+        <div class="container">
+            <div class="section-header reveal-item">
+                <h2>Organisation Structure</h2>
+                <p class="center-para">Building a foundation for innovation and excellence</p>
+            </div>
+            
+            <div class="org-structure-content reveal-item">
+                <p>Kutumbinfo is structured to develop global solutions that enable both fintech and non-fintech products and services to operate seamlessly and securely worldwide. The work at Kutumbinfo is overseen by a board of member organizations, including the Founder, CEO, COO, CTO, CMO, and CPO. Together, they share a collective responsibility for ensuring the reliability and security of the products, services, and underlying technology infrastructure that power them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-section reveal-section">
+        <div class="section-header reveal-item">
+            <h2>The Kutumbinfo Advantage</h2>
+            <p class="center-para">Delivering exceptional value through our core principles</p>
+        </div>
+        
+        <div class="value-cards">
+            <div class="value-card reveal-item">
+                <div class="value-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/security.png" alt="Security Icon">
+                </div>
+                <h3>Scalable & Secure</h3>
+                <p>We build solutions that handle increasing user traffic and future technological advancements while ensuring top-tier security for data protection.</p>
+            </div>
+            
+            <div class="value-card reveal-item">
+                <div class="value-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/cost_effective.png" alt="Cost-Effective Icon">
+                </div>
+                <h3>Cost-Effective</h3>
+                <p>We offer competitive and flexible pricing, making top-quality digital solutions accessible to businesses of all sizes and maximizing your ROI.</p>
+            </div>
+            
+            <div class="value-card reveal-item">
+                <div class="value-icon">
+                    <img src="assets/images/why_kutumbinfo_icons/support.png" alt="Support Icon">
+                </div>
+                <h3>Ongoing Support</h3>
+                <p>Our relationship doesn't end at delivery. We provide continuous technical support and maintenance to ensure your solution remains effective.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section reveal-section">
+        <div class="cta-container reveal-item">
+            <h2>Ready to Transform Your Digital Presence?</h2>
+            <p class="center-para">Partner with Kutumbinfo and experience the difference our expertise, innovation, and dedication can make for your business.</p>
+            <div class="cta-buttons">
+                <a href="work_with_us.html#contact-form" target="_blank" class="cta-button">Start Your Project</a>
+                <a href="work_with_us.html#contact-form" target="_blank" class="secondary-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+        <!-- Footer Section -->
+<footer id="about-us">
+    <div class="wrapper">
+        <div class="container">
+            <!-- Quick Links Row -->
+            <div class="quick-links-container">
+                <!-- Support -->
+                <div class="about-column support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">365 Days</a></li>
+                        <li><a href="javascript:void(0);">8760 Hours</a></li>
+                        <li><a href="javascript:void(0);">525600 Minutes</a></li>
+                        <li><a href="javascript:void(0);">31536000 Seconds</a></li>
+                    </ul>
+                </div>
+                <!-- Location -->
+                <div class="about-column location">
+                    <h3>Location</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Plot-1, IT Park Rd, Nagpur MH-440022</a></li>
+                        <li><a href="tel:+918956118607">+91-895 611 8607</a></li>
+                        <li><a href="mailto:connect@kutumbinfo.com">connect@kutumbinfo.com</a></li>
+                        <li><a href="mailto:kkutumbinfo@gmail.com">kkutumbinfo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Explore Us -->
+                <div class="about-column">
+                    <h3>Explore Us</h3>
+                    <ul>
+                        <li><a href="Services/web_dev.html" target="_blank">Web Development Portfolio</a></li>
+                        <li><a href="Services/mob_app.html" target="_blank">Mobile Application Portfolio</a></li>
+                        <li><a href="work_with_us.html" target="_blank">About Us</a></li>
+                        <li><a href="work_with_us.html#contact-form" target="_blank">Careers</a></li>
+                        <li><a href="https://azlogics.com/" target="_blank">Associate Venture</a></li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="about-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="Products/KYCPLUS.html" target="_blank">KYC Plus</a></li>
+                        <li><a href="Products/RPACPC.html" target="_blank">RPACPC</a></li>
+                        <li><a href="Products/AZAPI.html" target="_blank">AZAPI</a></li>
+                        <li><a href="Products/wpx_nexus.html" target="_blank">WPS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Row with Logo, Links, and Social Media -->
+        <div class="footer-row">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="assets/images/logo kutumbinfo13.png" alt="Kutumbinfo Logo">
+            </div>
+            
+            <!-- Footer Note with Links and Copyright -->
+            <div class="footer-note">
+                <!-- Footer Links -->
+                                <div class="footer-links">                    <ul>                        <li><a href="terms_and_conditions.html#terms" target="_blank">Terms and Conditions</a></li>                        <li><a href="terms_and_conditions.html#privacy" target="_blank">Privacy Policy</a></li>                        <li><a href="terms_and_conditions.html#refunds" target="_blank">Refunds</a></li>                        <li><a href="sitemap.html" target="_blank">Sitemap</a></li>                    </ul>                </div>
+                <p class="copyright">All Rights Reserved © Copyright 2025 | KuTuMbinfo Pvt Ltd</p>
+            </div>
+            
+            <!-- Stay Connected -->
+            <div class="stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/images/social_icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/social_icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="assets/images/social_icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/images/social_icon/twitter.png" alt="X (Twitter)"></a>
+                    <a href="#"><img src="assets/images/social_icon/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+ 
+</body>
+</html>
+
+
+
